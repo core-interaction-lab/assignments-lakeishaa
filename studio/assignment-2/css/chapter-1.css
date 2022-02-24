@@ -1,0 +1,10 @@
+body {
+    background-color: hsl(212, 11%, 9%);
+}
+
+p {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(114, 89%, 39%);
+}
+

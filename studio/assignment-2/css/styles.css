@@ -1,5 +1,11 @@
+body {
+    background-color: hsl(212, 11%, 9%);
+}
+
 h1 {
     font-size: 90px;
     text-align: center;
     font-family: 'Space Mono', monospace;
+    color: hsl(114, 89%, 39%);
 }
+
