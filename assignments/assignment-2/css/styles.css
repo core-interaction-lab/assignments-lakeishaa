@@ -6,6 +6,7 @@ body {
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     background-color: hsl(216, 100%, 39%);
   }
   
@@ -56,3 +57,4 @@ body {
     border-radius: 100px;
     border-color: hsl(0, 0%, 100%);
   }
+
