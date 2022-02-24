@@ -26,8 +26,8 @@ body {
 
   h1 {
     text-align: center;
-    color: hsl(0, 0%, 100%)
-    
+    color: hsl(116, 67%, 45%);
+    font-size: 50px;
   }
 
   h2 {
@@ -43,7 +43,7 @@ body {
   }
   
   .flex-container-2 > div {
-    background-color: hsl(216, 100%, 49%);
+    background-color: hsl(49, 93%, 50%);
     width: 500px;
     height: 70px;
     margin: 20px;
@@ -54,5 +54,5 @@ body {
     border-width: 5px;
     border-style: solid;
     border-radius: 100px;
-    border-color; hsl(113, 62%, 43%);
+    border-color: hsl(0, 0%, 100%);
   }
