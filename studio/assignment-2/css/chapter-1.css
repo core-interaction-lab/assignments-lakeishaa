@@ -1,4 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: hsl(212, 11%, 9%);
 }
 
@@ -6,5 +8,111 @@ p {
     text-align: center;
     font-family: 'Space Mono', monospace;
     color: hsl(114, 89%, 39%);
+    border: 1px solid #248EB2;
 }
 
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+}
+
+/* .navigation {
+    padding: 2px;
+    border: 1px solid #248EB2;
+    max-width: 335px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    text-align: center;
+    position: sticky;
+    margin-left: -250px;
+}
+
+.container {
+    width: 800px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    text-align: center;
+    height: 1500px;
+}
+
+
+*/
+.content {
+padding: 27px;
+width: 50%;
+margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.flex-child {
+    flex: 2;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 50%;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 50%;
+}
+
+.flex-child:second-child {
+    
+}
+
+.start {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(114, 89%, 39%);
+    border: 1px solid #248EB2;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 50%;
+}
+*/
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child-navigation {
+    height: 100px;
+    width: 100px;
+}
+
+.flex-child-right {
+    height: 100px;
+    width: 100px;
+}
+
+.flex-child-content {
+    flex-grow: 1;
+}
