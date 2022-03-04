@@ -117,4 +117,14 @@ footer {
     margin: 0px 50px;
   }
 
+  h1 {
+    text-align: center;
+    color: hsl(116, 67%, 45%);
+    font-size: 40px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
 }
