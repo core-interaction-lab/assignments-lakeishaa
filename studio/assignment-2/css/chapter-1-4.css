@@ -24,41 +24,41 @@
 
 .story{
   
-  margin:4px, 4px;
-  padding:4px;
-  width: 100%;
-  height: 800px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: hsla(212, 11%, 16%, 80%);
+    margin:4px, 4px;
+    padding:4px;
+    width: 100%;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: hsla(212, 11%, 16%, 80%);
 
-  text-align:left;
-  font-family: 'Space Mono', monospace;
-  color: hsl(114, 89%, 39%);
-  padding: 1px 13px 1px 20px;
-  font-size: 20px;
+    text-align:left;
+    font-family: 'Space Mono', monospace;
+    color: hsl(114, 89%, 39%);
+    padding: 1px 13px 1px 20px;
+    font-size: 20px;
 }
 
   .outer-col-1 {
-  flex: 1;
-  text-align: center;
-  font-family: 'Space Mono', monospace;
-  color: white;
-  font-size: 30px;
-  background-color: hsl(114, 47%, 40%);
+    flex: 1;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 30px;
+    background-color: hsl(114, 47%, 40%);
   }
 
-h2 {
-  position: sticky;
-  text-align: center;
-  font-family: 'Space Mono', monospace;
-  color: white;
-  font-size: 30px;   
-  border: 2px solid white;
-  padding: 10px 1px;
-  background-color: hsl(212, 11%, 9%);
-  border-style: solid;
-}
+  h2 {
+    position: sticky;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 30px;   
+    border: 2px solid white;
+    padding: 10px 1px;
+    background-color: hsl(212, 11%, 9%);
+    border-style: solid;
+  }
 
   .outer-col-2 {
     display: flex;
@@ -166,32 +166,13 @@ h2 {
     position: sticky;
 }
 
-.circle {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    background-color: hsl(212, 11%, 9%);
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-.hour {
-  border: 1px solid white;
-  background-color: white;
-  width: 2px;
-  height: 60px;
-  position: absolute;
-  display: block;
-  top: 240px;
-  left: 110px;
-}
-
 .word-count {
     text-align: center;
     font-family: 'Space Mono', monospace;
     color: white;
     font-size: 20px;   
     padding: 10px 1px;
+    position: sticky;
 }
 
 .word-count-box{
@@ -284,3 +265,58 @@ h2 {
 
 
   }
+
+
+
+  /* PROGRESS BAR */
+
+  /* default CSS variables */
+:root {
+  --text-color: #222222;
+  --progress-color: #2ecc71;
+  --progress-height: .5rem;
+}
+
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  font-size: 18px;
+}
+
+/* progress bar container */
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--progress-height);
+}
+
+/* progress bar */
+.progress-bar-container__progress {
+  height: var(--progress-height);
+  background-color: var(--progress-color);
+  width: 0%;
+  float: left;
+}
+
+/* post content and container */
+.post-container {
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: scroll;
+}
+.post-container h1,
+.post-container h2 {
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+}
+.post-container p {
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
