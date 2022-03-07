@@ -14,7 +14,7 @@
     text-align: left;
     font-family: 'Space Mono', monospace;
     color: hsl(114, 89%, 39%);
-    padding: 1px 20px;
+    padding: 1px 13px 1px 20px;
     font-size: 20px;
 }
 
@@ -46,15 +46,17 @@
 
   h1{
     font-size: 60px;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     font-family: 'Space Mono', monospace;
     color: white;
     border: 2px solid white;
     padding: 2px 1px;
     text-align: center;
     border-style: solid;
-    margin: 30px 350px;
-  }
+    margin: 30px 500px 30px 200px;
+    /* margin: 30px 370px 30px 100px; */
+}
+
 
   .inner-row {
     display: flex;
@@ -72,8 +74,8 @@
 
   .inner-row aside {
     flex: 1;
-    border: 1px solid hsla(195, 66%, 42%, 10%);
-    
+    border: 1px solid hsla(195, 66%, 42%, 0%);
+    padding: 0px 40px 0px 0px;
   }
 
   header, footer {
@@ -212,4 +214,20 @@
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     color: hsl(212, 11%, 9%);
+  }
+
+
+  @media (max-width: 900px) {
+
+  .outer-col-1 {
+    flex: 1;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-size: 30px;
+    background-color: hsl(114, 47%, 40%);
+    display: none;
+    }
+
+
   }
