@@ -49,7 +49,6 @@
   }
 
 h2 {
-  position: sticky;
   text-align: center;
   font-family: 'Space Mono', monospace;
   color: white;
@@ -98,7 +97,6 @@ h2 {
     flex: 1;
     border: 1px solid hsla(195, 66%, 42%, 0%);
     padding: 0px 40px 0px 0px;
-    position: sticky;
   }
 
   header, footer {
@@ -128,7 +126,6 @@ h2 {
     background-color: hsl(212, 11%, 9%);
     border: 2px solid white;
     height: 45px;
-    position: sticky;
 }
 
 .progress-box-inside {
@@ -137,7 +134,6 @@ h2 {
     height: 20px;
     background-color: hsl(114, 47%, 40%);
     margin-right: 90px;
-    position: sticky;
 }
 
 .complete {
@@ -146,7 +142,6 @@ h2 {
     color: white;
     font-size: 20px;   
     padding: 10px 1px;
-    position: sticky;
 }
 
 .complete-box{
@@ -163,7 +158,6 @@ h2 {
     color: white;
     font-size: 20px;   
     padding: 10px 1px;
-    position: sticky;
 }
 
 .circle {
@@ -182,8 +176,8 @@ h2 {
   height: 60px;
   position: absolute;
   display: block;
-  top: 240px;
-  left: 110px;
+  top: 440px;
+  left: 1280px;
 }
 
 .word-count {
@@ -208,7 +202,6 @@ h2 {
     color: white;
     font-size: 20px;   
     padding: 10px 1px;
-    position: sticky;
 }
 
   /* CIRCUIT BOARD */
@@ -223,12 +216,12 @@ h2 {
     padding: 5px;
 
     position: relative;
-    top: 30px;
+    top: 200px;
   
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     color: hsl(212, 11%, 9%);
-    position: sticky;
+    position: fixed;
 }
 
 .chapter-2 {
@@ -241,13 +234,13 @@ h2 {
     padding: 5px;
   
     position: relative;
-    top: 100px;
+    top: 300px;
     left: 10%;
     
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     color: hsl(212, 11%, 9%);
-    position: sticky;
+    position: fixed;
   }
 
   .chapter-3 {
@@ -260,13 +253,13 @@ h2 {
     padding: 5px;
   
     position: relative;
-    top: 100px;
+    top: 400px;
     left: 10%;
     
     font-family: 'Space Mono', monospace;
     font-size: 20px;
     color: hsl(212, 11%, 9%);
-    position: sticky;
+    position: fixed;
   }
 
 

@@ -194,3 +194,82 @@ border: 5px solid #336699;
     text-align: center;
     line-height: 45px;
 }
+
+/* JOINING LINES */
+.chapter-1-line1 {
+    border: 1px solid white;
+    background-color: white;
+    width: 2px;
+    height: 140px;
+    position: absolute;
+    display: block;
+    top:290px;
+    left: 300px;
+  } 
+
+.chapter-1-line2 {
+    border: 1px solid white;
+    background-color: white;
+    width: 155px;
+    height: 2px;
+    position: fixed;
+    display: block;
+    top:430px;
+    left: 300px;
+ } 
+
+ .chapter-2-line1 {
+ border: 1px solid white;
+ background-color: white;
+ width: 155px;
+ height: 2px;
+ position: absolute;
+ display: block;
+ top:500px;
+ left: 465px;
+ transform: rotate(45deg);
+}
+
+.chapter-2-line2 {
+    border: 1px solid white;
+    background-color: white;
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    display: block;
+    top:260px;
+    left: 610px;
+   }
+
+.chapter-3-line1 {
+    border: 1px solid white;
+    background-color: white;
+    width: 160px;
+    height: 2px;
+    position: fixed;
+    display: block;
+    top:230px;
+    left: 620px;
+}
+
+.chapter-3-line2 {
+    border: 1px solid white;
+    background-color: white;
+    width: 2px;
+    height: 130px;
+    position: absolute;
+    display: block;
+    top:230px;
+    left: 780px;
+} 
+
+.chapter-4-line1 {
+    border: 1px solid white;
+    background-color: white;
+    width: 2px;
+    height: 130px;
+    position: absolute;
+    display: block;
+    top:400px;
+    left: 780px;
+} 
