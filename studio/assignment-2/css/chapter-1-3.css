@@ -21,9 +21,13 @@
     overflow-y: auto;
 } */
 
-.story{
-  margin:4px, 4px;
-  padding:4px;
+.article {
+  padding: 40px;
+}
+
+.story {
+  margin: 0;
+  padding: 40px;
   width: 100%;
   height: 800px;
   overflow-x: hidden;
@@ -33,7 +37,7 @@
   text-align:left;
   font-family: 'Space Mono', monospace;
   color: hsl(114, 89%, 39%);
-  padding: 1px 10px 1px 10px;
+  padding: 20px 40px;
   font-size: 20px;
 }
 
@@ -319,28 +323,38 @@ h2 {
 
   */
 
-  @media (max-width: 414px) {
-    .body{
-      padding: 20px;
+  
+  
+@media screen and (max-width: 414px) {
+    
+    .body {
       display: block;
+      flex: none;
     }
     
     .h1 {
       font-size: 40px;
       font-family: 'Space Mono', monospace;
-      color: white;
-      border: 2px solid white;
-      padding: 2px 1px;
+      color: hsl(114, 89%, 39%);
+      border: none;
+      padding: 20px 0 10px 0px;
       text-align: center;
-      border-style: solid;
-      margin: 5px;
+      border-style: none;
+      margin: 0;
       justify-content: center;
+      background-color: hsla(212, 11%, 16%, 80%);
+    }
+
+
+    .story {
+      background-color: hsla(212, 11%, 16%, 80%);
+      font-size: 16px;
     }
 
     .inner-row {
       display: flex;
       flex-direction: column-reverse;
-      width: 100%
+      width: 100%;
     }
   
     .inner-col {
@@ -349,14 +363,13 @@ h2 {
   
     .inner-row article {
       min-height: 60vh;
-      padding: 5px
-      
+      padding: 5px 45px;
     }
   
     .inner-row aside {
       flex: 1;
       border: 1px solid hsla(195, 66%, 42%, 0%);
-      padding: 5px;
+      padding: 25px;
       width: 100%;
       margin: auto;
     }
@@ -372,9 +385,52 @@ h2 {
   
     .outer-col-2{
       margin: auto;
-      padding: 5px;
     }
 
 
+    .clock {
+      display: none;
+    }
+
+    .progress{
+      padding: 0px;
+      display: none;
+    }
+
+    .progress-box{
+      display: none;
+      font-size: 19px;
+    }
+
+    .progress-box-inside {
+      display: none;
+    }
+
+    .complete{
+      padding: 0px;
+      font-size: 19px;
+    }
+
+    .complete-box{
+      font-size: 19px;
+    }
+
+    .word-count{
+      padding: 0px;
+      font-size: 19px;
+    }
+
+    .word-count-box{
+      font-size: 19px;
+    }
+
+    .characters{
+      padding: 0px;
+      font-size: 19px;
+    }
+
+    .characters-box{
+      font-size: 19px;
+    }
 
   }
