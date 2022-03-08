@@ -259,10 +259,10 @@ border: 5px solid #336699;
     border: 1px solid hsl(114, 47%, 40%);
     background-color: hsl(114, 47%, 40%);
     width: 2px;
-    height: 140px;
+    height: 139px;
     position: fixed;
     display: block;
-    top:290px;
+    top:293px;
     left: 300px;
   } 
 
