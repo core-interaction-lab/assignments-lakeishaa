@@ -322,6 +322,7 @@ h2 {
   @media (max-width: 414px) {
     .body{
       padding: 20px;
+      display: block;
     }
     
     .h1 {
@@ -373,4 +374,7 @@ h2 {
       margin: auto;
       padding: 5px;
     }
+
+
+
   }
