@@ -433,6 +433,10 @@
         text-decoration: none;
     }
 
+    a{
+      padding:0px;
+    }
+
     .h1 {
       font-size: 40px;
       font-family: 'Space Mono', monospace;
@@ -491,7 +495,6 @@
 
     .chapter-2 {
         border: 4px solid hsl(114, 89%, 39%);
-        font-size: 5px;
     }
 
     .chapter-3 {
