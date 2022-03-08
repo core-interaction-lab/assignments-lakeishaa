@@ -12,14 +12,15 @@
 
     </head>
     <body class="body">
-        <nav class="sidenav">
+        <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <nav id="mySidenav2" class="sidenav">
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 
              
 
-             <h2>START</h2>
+             <h2>HOME</h2>
                 <div class="circuit">
                   <a href="chapter-1-5.html"><div class="chapter-1">1</div></a>
                   <a href="chapter-1-5.html"><div class="chapter-2">2</div></a>
@@ -36,8 +37,8 @@
               </div>
             </div>
 
-            <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        
+            <!-- <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+         -->
         </nav>
         <div class="outer-col-2">
             <h1 class="h1">Chapter 1</h1>
@@ -95,10 +96,12 @@
         <script>
             function openNav() {
               document.getElementById("mySidenav").style.width = "100%";
+              document.getElementById("mySidenav2").style.width = "100%";
             }
             
             function closeNav() {
               document.getElementById("mySidenav").style.width = "0";
+              // document.getElementById("mySidenav2").style.dipslay = "none";
             }
             </script>
 
