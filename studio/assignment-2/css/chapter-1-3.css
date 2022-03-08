@@ -90,13 +90,14 @@ h2 {
 
   .inner-row article {
     min-height: 60vh;
-    padding: 1px 100px;
+    padding: 1px 92px 1px 110px;
+    
   }
 
   .inner-row aside {
     flex: 1;
     border: 1px solid hsla(195, 66%, 42%, 0%);
-    padding: 0px 40px 0px 0px;
+    padding: 0px 65px 0px 0px;
   }
 
   header, footer {
@@ -167,6 +168,8 @@ h2 {
     background-color: hsl(212, 11%, 9%);
     border-radius: 50%;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
 }
 
 .hour {
@@ -174,34 +177,64 @@ h2 {
   background-color: white;
   width: 2px;
   height: 60px;
-  position: absolute;
-  display: block;
-  top: 440px;
-  left: 1280px;
+  margin: 14px;
+  justify-content: center;
+  -webkit-animation:spin 15s linear infinite;
+  -moz-animation:spin 15s linear infinite;
+  animation:spin 15s linear infinite;
+  transform-origin: bottom center;
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
 
+}
 .word-count {
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    color: white;
-    font-size: 20px;   
-    padding: 10px 1px;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 20px;   
+  padding: 10px 1px;
 }
 
 .word-count-box{
-    color: white;
-    border: 2px solid white;
-    padding: 10px 1px;
-    background-color: hsl(212, 11%, 9%);
-    border: 2px solid white;
-    height: 45px;
-    line-height: 21px;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 1px;
+  background-color: hsl(212, 11%, 9%);
+  border: 2px solid white;
+  height: 45px;
+  line-height: 21px;
 
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    color: white;
-    font-size: 20px;   
-    padding: 10px 1px;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 20px;   
+  padding: 10px 1px;
+}
+
+.characters {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 20px;   
+  padding: 10px 1px;
+}
+
+.characters-box{
+  color: white;
+  border: 2px solid white;
+  padding: 10px 1px;
+  background-color: hsl(212, 11%, 9%);
+  border: 2px solid white;
+  height: 45px;
+  line-height: 21px;
+
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 20px;   
+  padding: 10px 1px;
 }
 
   /* CIRCUIT BOARD */
