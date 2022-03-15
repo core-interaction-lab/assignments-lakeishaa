@@ -15,12 +15,31 @@
     font-size: 1.6rem;
     }
 
+    .blink {
+      /* color: hsl(114, 100%, 77%); */
+      color: hsl(114, 89%, 40%);
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
   a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
     color: hsla(114, 89%, 39%, 0%);
+    
 }
+
 
   /* p {
     text-align: left;
@@ -53,7 +72,7 @@
   padding: 20px 40px;
   font-size: 20px;
 
-  overflow: hidden;
+  overflow: auto;
   /* border-right: .15em solid orange; */
   /* font-size: 1.6rem; */
   width: 0;
@@ -177,7 +196,7 @@
   
   .inner-row article {
     min-height: 60vh;
-    padding: 1px 90px 1px 100px;
+    padding: 1px 90px 35px 100px;
     
   }
   
