@@ -1,6 +1,7 @@
 body {
     background-color: hsl(212, 11%, 9%);
     margin: 20px;
+    overflow: auto;
 }
 /* 
 h1 {
