@@ -623,6 +623,141 @@ border: 5px solid #336699;
     left:1050px;
 }
 
+@media screen and (max-width: 800px) {
+
+    
+    /* .content-out {
+        padding: 0px 100px 0px 100px;
+
+    }   */
+
+    .h1 {
+        text-align: center;
+        margin: auto;
+        padding: 0 0 10px 0;
+        margin: 30px 0px;
+    }
+
+    .h2 {
+        margin: auto;
+        top: -490px;
+        left: 120px;
+        background-color: hsl(212, 11%, 9%);
+        bottom: 0;
+        padding: 5px 25px;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        position: fixed;
+        font-size: 20px;
+        
+    }
+
+    .chapter-1-line2 {
+        width: 70px;
+        margin: 0px 58px;
+    }
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0 0 800px;
+        margin: auto;
+        transform: scale(0.6) rotate(90deg);
+        margin: 10px 0px;
+
+    }  
+
+    .chapter-1 {
+        transform: rotate(-90deg);
+    }
+
+    .chapter-2 {
+        transform: rotate(-90deg);
+    }
+
+    .chapter-3 {
+        transform: rotate(-90deg);
+
+    }
+
+    .chapter-4 {
+        transform: rotate(-90deg);
+    }
+
+    .chapter-5 {
+        transform: rotate(-90deg);
+    }
+
+    .chapter-6 {
+        transform: rotate(-90deg);
+    }
+
+    .chapter-7 {
+        transform: rotate(-90deg);
+    }
+
+
+
+
+    .chapter-1-line2 {
+        left: 317px;
+    }
+    
+    .chapter-1-line1 {
+        display: none;
+    }
+
+    .circuitlines-chapter-3-1 {
+        display: none;
+    }
+
+    .circuitlines-chapter-3-2 {
+        display: none;
+    }
+
+    .circuitlines-chapter-3-3 {
+        display: none;
+    }
+
+    .circuitlines-chapter-3-4 {
+        display: none;
+    }
+
+    .circle-3 {
+        display: none;
+    }
+
+    .circle-4 {
+        display: none;
+    }
+
+    .circuitlines-chapter-7-1 {
+        display: none;
+    }
+
+    .circuitlines-chapter-7-2 {
+        display: none;
+    }
+
+    .circuitlines-chapter-7-3 {
+        display: none;
+    }
+
+
+    /*
+    .chapter-1-line2 {
+        background-color: white;
+        border: 1px solid white; 
+        width: 2px;
+        height: 60px;  
+        top: 147px;
+        left: 50%;
+        right: 50%;
+    } */
+
+}
+
 @media screen and (max-width: 414px) {
 
     .h1 {
@@ -633,13 +768,19 @@ border: 5px solid #336699;
 
     .h2 {
         margin: auto;
-        top: 0;
+        /* top: -690px;
+        left: 115px; 
+        position: fixed;
+        */
         bottom: 0;
         padding: 5px 25px;
         text-align: center;
         width: 100px;
-        position: static;
+        position: relative;
         font-size: 20px;
+
+        top: 35px;
+        left: 5px;
     }
 
     .content {
@@ -740,3 +881,4 @@ border: 5px solid #336699;
     } */
 
 }
+
