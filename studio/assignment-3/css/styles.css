@@ -1,0 +1,122 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    /* padding: 5px; */
+    margin: 5px;
+    flex: 1 100%;
+    border-radius: 1px;
+}
+
+.header {
+    background-color: tomato;
+    height: 180px;
+}
+
+.mood-button {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 0 300px;
+}
+
+.mood-button>*{
+    /* padding: 5px; */
+    margin: 15px;
+    border-radius: 1px;
+    margin: auto;
+}
+
+.happy-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.mood{
+    padding: 50px 0px;
+}
+
+.calm-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.angry-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.dreamy-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.sensual-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.footer{
+    background-color: lightgreen;
+    height: 80px;
+}
+
+.main {
+    text-align: left;
+    background-color: deepskyblue;
+    height: 400px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 70px solid blue;
+
+}
+
+.aside1 {
+    background-color: gold;
+}
+
+.aside2 {
+    background-color: hotpink;
+}
+
+@media all and (min-width: 800px){
+    .main {
+        flex: 3;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .aside2 {
+        order: 2;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
+    }
+
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
