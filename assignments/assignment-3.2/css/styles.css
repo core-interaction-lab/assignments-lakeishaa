@@ -1,0 +1,39 @@
+body {
+    background-color: cornflowerblue;
+  
+    font-family: 'Share Tech Mono', monospace;
+    font-style: bold;
+    -webkit-text-stroke: 2px white;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+  }
+  
+  .title-class {
+    color:hsl(216, 100%, 39%);
+    font-size: 80px;
+  }
+  
+  img {
+    height: 500px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  
+  h1 {
+    /* margin: auto; */
+    text-align: center;
+    font-size: 150px;
+  }
+
+  .description {
+    
+    font-family: 'Share Tech Mono', monospace;
+    font-style: bold;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+  }

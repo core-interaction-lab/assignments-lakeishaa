@@ -1,10 +1,49 @@
 body {
-  background-color: hsl(216, 100%, 39%);
-  font-family: 'Gloria Hallelujah', cursive;  
+  background-color: black;
+
+  font-family: 'Share Tech Mono', monospace;
+  font-style: bold;
+  text-align: center;
+  color: white;
 }
 
-.title-class {
-  color:hsl(216, 100%, 39%);
-  font-size: 80px;
+
+img {
+  height: 480px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
+h1 {
+  /* margin: auto; */
+  text-align: center;
+  font-size: 150px;
+  margin: 30px auto 10px auto;
+}
+
+.genre {
+  font-size: 50px;
+  margin: 1px;
+}
+
+.date {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 100px;
+  -webkit-text-stroke: 3px DodgerBlue;
+  margin: 15px auto 0px auto;
+  color:DodgerBlue;
+
+}
+
+.description {
+  font: 10px;
+  margin: auto 100px;
+  margin: 10px 100px 100px 100px;
+}
