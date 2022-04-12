@@ -45,5 +45,9 @@ h1 {
 .description {
   font: 10px;
   margin: auto 100px;
-  margin: 10px 100px 100px 100px;
+  margin: 10px 100px 0px 100px;
+}
+
+a.imdb {
+  margin: 10px 100px 200px 100px;
 }

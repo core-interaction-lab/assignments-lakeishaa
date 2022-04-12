@@ -28,29 +28,13 @@ const fetchMovies = async () => {
         if (movie.fields.poster) {
             console.log(movie.fields.poster[0].url);
             const posterImg = document.createElement('img');
-            const genreEl = document.createElement('div');
-            const release_dateEl = document.createElement('div');
-            const imdb_urlEl = document.createElement('a');
-            const descriptionEl = document.createElement('div');
+            // const genreEl = document.createElement('div');
+            // const release_dateEl = document.createElement('div');
+            // const imdb_urlEl = document.createElement('a');
+            // const descriptionEl = document.createElement('div');
             // pictureImg.src = cloth.fields.picture[0].url;
             posterImg.setAttribute('src', movie.fields.poster[0].url);
             container.append(posterImg);
-
-        }
-        if (movie.fields.genre) {
-            console.log(movie.fields.genre[0].url);
-        }
-        if (movie.fields.release_date) {
-            console.log(movie.fields.release_date[0].url);
-        }
-        if (movie.fields.imdb_url) {
-            console.log(movie.fields.imdb_url[0].url);
-        }
-        if (movie.fields.poster) {
-            console.log(movie.fields.poster[0].url);
-        }
-        if (movie.fields.description) {
-            console.log(movie.fields.description[0].url);
         }
 
         if (movie.fields.name) {
@@ -59,6 +43,14 @@ const fetchMovies = async () => {
             // how to add class
             nameEl.classList.add('title');
             container.append(nameEl);
+        }
+
+        if (movie.fields.imdb_url) {
+            const imdb_urlEl = document.createElement('a');
+            imdb_urlEl.innerHTML = 'Link';
+            imdb_urlEl.setAttribute('href', movie.fields.imdb_url);
+            imdb_urlEl.classList.add('imdb');
+            container.append(imdb_urlEl);
         }
 
         if (movie.fields.genre) {

@@ -1,0 +1,231 @@
+body {
+    display: block;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #FBF4ED;
+    /* overflow: hidden; */
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.h1 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    color: hsl(194, 38%, 68%);
+}
+
+p {
+    text-align: center;
+    margin: 50px;
+    opacity: 0.2;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    height: 100vh; /*THis will set height equal to the height of windows*/
+    width: 95vw;/*This will set width equal to width of windows*/
+    margin: auto;
+}
+
+.wrapper>*{
+    /* padding: 5px; */
+    margin: 1px;
+    flex: 1 100%;
+    border-radius: 1px;
+    padding: 0px;
+    width: 10px;
+}
+
+.header {
+    background-color: #FBF4ED;
+    height: 130px;
+}
+
+.genre-button {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 0 400px;
+}
+
+.genre-button>*{
+    /* padding: 5px; */
+    margin: 15px;
+    border-radius: 1px;
+    margin: auto;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.genre {
+    margin: 40px auto 0px auto;
+}
+
+.rb-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.rb-button:hover {
+    background-color: white;
+}
+
+.pop-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.pop-button:hover {
+    background-color: white;
+}
+
+.hiphop-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.hiphop-button:hover {
+    background-color: white;
+}
+
+.rock-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.rock-button:hover {
+    background-color: white;
+}
+
+.dance-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.dance-button:hover {
+    background-color: white;
+}
+
+.indie-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.indie-button:hover {
+    background-color: white;
+}
+
+.latin-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #B8D6DF;
+    box-shadow: 0px 4px 3px grey;
+}
+
+.latin-button:hover {
+    background-color: white;
+}
+
+.footer{
+    background-color: #FBF4ED;
+    height: 100px;
+}
+
+.main {
+    background-color: #d4d9de;
+    height: 380px;
+    border: 60px solid #D8D8D8;
+    border-radius: 25px;
+    box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
+}
+
+/* record player */
+.record-in {
+    background-color: #FFFBF7;
+    height: 380px;
+    width: 590px;
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
+    position: relative;
+    flex: 2;
+}
+
+.vinyl {
+    background-color: #d4d9de;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 70%); */
+    box-shadow: 2px 5px 4px rgba(128,128,128, 80%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+/* record player */
+
+.aside1 {
+    background-color: #FBF4ED;
+}
+
+.aside2 {
+    background-color: #FBF4ED;
+}
+
+@media all and (min-width: 800px){
+    .main {
+        flex: 2;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .aside2 {
+        order: 2;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
+    }
+
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
