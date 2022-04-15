@@ -60,3 +60,5 @@ const fetchSongs = async () => {
 
     })
 };
+
+fetchSongs();

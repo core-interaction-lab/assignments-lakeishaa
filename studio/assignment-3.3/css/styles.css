@@ -79,7 +79,10 @@ p {
 }
 
 .rb-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .pop-button {
@@ -91,7 +94,10 @@ p {
 }
 
 .pop-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .hiphop-button {
@@ -103,7 +109,10 @@ p {
 }
 
 .hiphop-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .rock-button {
@@ -115,7 +124,10 @@ p {
 }
 
 .rock-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .dance-button {
@@ -127,7 +139,10 @@ p {
 }
 
 .dance-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .indie-button {
@@ -139,7 +154,10 @@ p {
 }
 
 .indie-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .latin-button {
@@ -151,7 +169,10 @@ p {
 }
 
 .latin-button:hover {
-    background-color: white;
+    outline: 5px solid #96A5A3;
+    background-color: #FBF4ED;
+    outline-offset: -5px;
+    box-shadow: 0px 0px 0px grey;
 }
 
 .footer{
@@ -159,9 +180,33 @@ p {
     height: 100px;
 }
 
+.player-frame {
+    /* background-color: #96A5A3;
+    border-radius: 10px;
+    width: 25px;
+    height: 50px;
+    top: -490px;
+    left: 63px;
+    position: relative; */
+
+    background-color: hsla(172, 8%, 62%, 50%);
+    height: 100px;
+    width: 500px;
+    border-radius: 20px;
+    /* box-shadow: 0px 4px 3px rgba(128,128,128, 80%); */
+    /* position: relative;
+    display: table-cell;
+    vertical-align: middle; */
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    top: 150px;
+    justify-content: center;
+}
+
 .main {
     background-color: #d4d9de;
-    height: 380px;
+    height: 350px;
     width: 600px;
     border: 60px solid #D8D8D8;
     border-radius: 25px;
@@ -172,7 +217,7 @@ p {
 
 /* record player */
 .record-in {
-    background-color: #FFFBF7;
+    /* background-color: #FFFBF7;
     height: 380px;
     width: 650px;
     margin: auto;
@@ -180,7 +225,16 @@ p {
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
     position: relative;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle; */
+
+
+    background-image: radial-gradient(#7f8799 10%, #FFFBF7 10%);
+    background-position: 0 0;
+    background-size: 35px 34px;
+    height: 380px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
 }
 
 .vinyl {
@@ -192,8 +246,8 @@ p {
     border-radius: 50%;
     margin: 0;
     position: relative;
-    top: 10%;
-    left: 10%;
+    top: 50px;
+    left: 50px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -213,9 +267,9 @@ p {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    top: 260px;
-    left: 860px;
-    position: fixed;
+    top: -250px;
+    left: 400px;
+    position: relative;
 }
 
 .scracther-in {
@@ -223,20 +277,65 @@ p {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    top: 280px;
-    left: 880px;
-    position: fixed;
+    top: 20px;
+    left: 20px;
+    position: relative;
+}
+
+.handle-out {
+    background-color: #96A5A3;
+    width: 10px;
+    height: 220px;
+    top: -40px;
+    left: 10px;
+    transform: rotate(30deg);
+    position: relative;
+}
+
+.handle-in {
+    background-color: #96A5A3;
+    width: 10px;
+    height: 130px;
+    top: -95px;
+    left: -102px;
+    transform: rotate(65deg);
+    position: relative;
+}
+
+.needle-out {
+    background-color: #96A5A3;
+    border-radius: 20px;
+    width: 35px;
+    height: 55px;
+    top: -160px;
+    left: -180px;
+    transform: rotate(65deg);
+    position: relative;
+}
+
+.needle-in {
+    width: 20px;
+    height: 30px;
+    background: #96A5A3;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-200deg);
+    top: -185px;
+    left: -175px;
+    position: relative;
+}
+
+.topper-in {
+    background-color: #96A5A3;
+    border-radius: 10px;
+    width: 25px;
+    height: 50px;
+    top: -490px;
+    left: 63px;
+    transform: rotate(-58deg);
+    position: relative;
 }
 
 /* record player */
-
-.aside1 {
-    background-color: #FBF4ED;
-}
-
-.aside2 {
-    background-color: #FBF4ED;
-}
 
 @media all and (min-width: 800px){
     .main {
