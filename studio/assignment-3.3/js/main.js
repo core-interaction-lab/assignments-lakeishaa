@@ -46,10 +46,10 @@ const fetchSongs = async () => {
         const durationEl = document.createElement('div');
         const spotifyEl = document.createElement('a');
 
-        nameEl.innerHTML = movie.fields.name;
-        artistEl.innerHTML = movie.fields.artist;
-        durationEl.innerHTML = movie.fields.duration;
-        spotifyEl.innerHTML = movie.fields.spotify;
+        nameEl.innerHTML = song.fields.name;
+        artistEl.innerHTML = song.fields.artist;
+        durationEl.innerHTML = song.fields.duration;
+        spotifyEl.innerHTML = song.fields.spotify;
 
         articleEl.appendChild(nameEl);
         articleEl.appendChild(artistEl);
