@@ -26,7 +26,7 @@ const buildSlideshow = (songs) => {
     slideshowContainer.append(firstSong);
 
     // variable to hold index + two event lsitenets. if u click next button it will run event listenr huh im confused
-    let currentMovie = 0; 
+    let currentSong = 0; 
     // using let bc were gn be changing this ^^ constance weve been using we cant change them after u use them
 
     prevButton.addEventListener('click', () => {
@@ -77,8 +77,8 @@ const buildSlide = (song) => {
             songContainer.append(posterImg);
         }
 
-    if (song.fields.release_date) {
-        console.log(song.fields.release_date);
+    if (song.fields.artist) {
+        console.log(song.fields.artist);
     }
 
     if (song.fields.name) {
