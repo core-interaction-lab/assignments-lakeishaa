@@ -52,7 +52,7 @@ const buildSlideshow = (songs) => {
                 currentSong = currentSong + 1 ; 
             }
     
-            const songRecord = songs [currentSong;
+            const songRecord = songs [currentSong];
             swapSlide(songRecord);
         });
     
@@ -82,14 +82,14 @@ const buildSlide = (song) => {
     }
 
     if (song.fields.name) {
-        const namenEl = document.createElement('p');
+        const nameEl = document.createElement('p');
         nameEl.innerHTML = song.fields.name;
         nameEl.classList.add('song-name');
         songContainer.append(nameEl);
     }
     
-]    return songContainer;
+    return songContainer;
 
 };
 
-fetchMovies();
+fetchSongs();
