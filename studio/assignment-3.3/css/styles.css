@@ -206,7 +206,7 @@ p {
 
 .main {
     background-color: #d4d9de;
-    height: 350px;
+    height: auto;
     width: 600px;
     border: 60px solid #D8D8D8;
     border-radius: 25px;
