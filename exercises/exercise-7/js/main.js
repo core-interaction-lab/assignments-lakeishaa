@@ -1,5 +1,14 @@
+const db = {
+    id: 'appdimU0rQM4pceUj',
+    table: 'movies',
+    apiKey: 'keyeABd47N9SUfc1p'
+};
+
+const airtableUrl = `https://api.airtable.com/v0/appdimU0rQM4pceUj/movies?api_key=keyeABd47N9SUfc1p`
+
+
 const fetchMovies = async () => {
-    const response = await fetch('https://api.airtable.com/v0/appdimU0rQM4pceUj/movies?api_key=keyeABd47N9SUfc1p}').then(data => data.json() );
+    const response = await fetch(airtableUrl).then(data => data.json());
 
     console.log(response);
 

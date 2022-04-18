@@ -16,7 +16,11 @@ const fetchMovies = async () => {
 const slideshowContainer = document.getElementById('slideshow-container');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
+// const playButton = document.getElementById('rb-button');
 
+// playButton.addEventListener('click'), () => {
+    
+// }
 
 const buildSlideshow = (movies) => {
     console.log(movies); 

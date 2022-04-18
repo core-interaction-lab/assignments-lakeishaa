@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+#slideshow-container {
+    display: flex;
+}
+
+article {
+    position: relative;
+    max-width: 500px;
+    width: 20%;
+    transition: all 0.3s ease;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    display: none
+    /* position: absolute; */
+}
