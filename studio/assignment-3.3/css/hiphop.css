@@ -403,7 +403,7 @@ i.fa-solid {
     margin: auto;
     position: relative;
     display: inline-block;
-    z-index: 3;
+    /* z-index: 3; THIS ONE WORKS */
 }
 
 .scratcher-out {
