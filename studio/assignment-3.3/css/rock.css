@@ -491,6 +491,53 @@ i.fa-solid {
     position: relative;
 }
 
+.flash-1 {
+    height: 40px;
+    width: auto;
+    position: relative;
+    left: -500px;
+    top: 250px;
+    transform: rotate(20deg);
+}
+
+.flash-2 {
+    height: 30px;
+    width: auto;
+    position: relative;
+    left: -450px;
+    top: 150px;
+    transform: rotate(20deg);  
+}
+
+.flash-3 {
+    height: 40px;
+    width: auto;
+    position: relative;
+    left: 450px;
+    top: -150px;
+    transform: rotate(20deg);  
+}
+
+#shake{
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
 /* record player */
 
 @media all and (min-width: 800px){
