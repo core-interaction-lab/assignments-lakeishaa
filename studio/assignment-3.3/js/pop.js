@@ -6,34 +6,39 @@ const db = {
 
 const airtableUrl = `https://api.airtable.com/v0/appqlAk4rdVEwSycH/songs?api_key=keyul7nEZff6Uw7lV`
 
+// const fetchSongs = async () => {
+//     const response = await fetch(airtableUrl).then(data => data.json());
+
+//     const danceGenre = response.records.filter(genre => {
+//       return genre.fields.genre.includes('Dance/Electronic');
+//     });
+
+//     console.log(danceGenre);
+
+//     // buildSlideshow(response.records);
+//     buildSlideshow(danceGenre);
+//     return response.records;
+// };
+
 const fetchSongs = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
-    songsArray = response.records;
 
-    // const popSongs = songsArray.filter(song => {
-    //     if (song.fields.genre) === "Pop") {
-    //         return true;
-    //     }
-    
-    //     return false;
-    // });
+    const danceGenre = response.records.filter(item => {
+      const { genre } = item.fields;
+      return genre.includes('Pop') || genre.includes('Indian Film Pop') || genre.includes('Latin Pop') || genre.includes('Synth-pop');
+    });
 
-    // console.log(popSongs);
+    console.log(danceGenre);
+    console.log(response.records);
 
-    buildSlideshow(popSongs);
     // buildSlideshow(response.records);
-    return response.records; 
+    buildSlideshow(danceGenre);
+    return response.records;
 };
-
-
-// const pop
-// const filteredRecords = popRecords.filter(pop => GeolocationPositionError.fields.description, true);
-// console.log(filteredRecords);
 
 const slideshowContainer = document.getElementById('slideshow-container');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
-
 
 const buildSlideshow = (songs) => {
     console.log(songs); 
@@ -84,20 +89,13 @@ const swapSlide = (songRecord) => {
 }
 
 const buildSlide = (song) => {
-
-    var posterContainer = document.querySelector(".poster");
-    var genreActions = song.fields.genre;
-    genreActions.forEach(function (b) {
-      posterContainer.classList.add(b);
-    });
-
     const songContainer = document.createElement('article');
     if (song.fields.poster) {
             console.log(song.fields.poster[0].url);
             const posterImg = document.createElement('img');
             posterImg.src = song.fields.poster[0].url;
             posterImg.classList.add('poster');
-            posterImg.id ='jangan';
+            posterImg.id ='poster-img';
             songContainer.append(posterImg);
         }
 
@@ -145,10 +143,10 @@ const buildSlide = (song) => {
 fetchSongs();
 
 document.querySelector("#pause").addEventListener('click', function() {
-	document.querySelector('poster').style.animationPlayState = 'paused';
+	document.querySelector('#poster-img').style.animationPlayState = 'paused';
 });
 
 // play animation
 document.querySelector("#play").addEventListener('click', function() {
-	document.querySelector('poster').style.animationPlayState = 'running';
+	document.querySelector('#poster-img').style.animationPlayState = 'running';
 });

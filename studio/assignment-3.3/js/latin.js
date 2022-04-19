@@ -25,7 +25,7 @@ const fetchSongs = async () => {
 
     const danceGenre = response.records.filter(item => {
       const { genre } = item.fields;
-      return genre.includes('Alternative Rock') || genre.includes('Rock') || genre.includes('Metal');
+      return genre.includes('Latin Urbano') || genre.includes('Reggaeton') || genre.includes('Flamenco') || genre.includes('Latin Pop');
     });
 
     console.log(danceGenre);

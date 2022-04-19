@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Spotify Explored</title>
+        <title>Hip-Hop</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/hiphop.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,28 +13,29 @@
     <body>
         <div class="wrapper">
             <header class="header">
-                <h1 class="h1"> Choose A Genre</h1>
+                <h1 class="h1">Hip-Hop</h1>
                 <div class="genre-button">
                     <div class="rb-button">
-                        <div class="genre" onclick="audio.play()">R&B</div>
+                        <a href="rb.html"><div class="genre">R&B</div></a>
                     </div>
                     <div class="pop-button">
-                        <div class="genre"><a href="pop.html">Pop</a></div>
+                        <a href="pop.html"><div class="genre">Pop</div></a>
                     </div>
                     <div class="hiphop-button">
-                        <a href="#"><div class="genre">Hip-Hop</div></a>
+                        <a href="hiphop.html"><div class="genre">HipHop</div></a>
                     </div>
                     <div class="rock-button">
-                        <a href="#"><div class="genre">Rock</div></a>
+                        <!-- <div class="genre"><a href="rock.html">Rock</a></div> -->
+                        <a href="rock.html"><div class="genre">Rock</div></a>
                     </div>
                     <div class="dance-button">
-                        <a href="#"><div class="genre">Dance</div></a>
+                        <a href="dance.html"><div class="genre">Dance</div></a>
                     </div>
                     <div class="indie-button">
-                        <a href="#"><div class="genre">Indie</div></a>
+                        <a href="indie.html"><div class="genre">Indie</div></a>
                     </div>
                     <div class="latin-button">
-                        <a href="#"><div class="genre">Latin</div></a>
+                        <a href="latin.html"><div class="genre">Latin</div></a>
                     </div>
                 </div>
             </header>
@@ -42,6 +43,28 @@
             <article class="main">
                 <div class="record-out">
                     <div class="record-in">
+                        <div class="player-frame">
+                            <!-- <div class="song-name"></div> -->
+                            <div class="play">
+                                <div id="slideshow-container" class="play-in"></div>
+                            </div>
+                            <!-- <button class="active">Click</button> -->
+        
+                            <button id="pause"><i class="fa-solid fa-play"></i></button>   
+                            <button id="play"><i class="fa-solid fa-pause"></i></button> 
+                               
+                            <!-- <div class="buttons"> -->
+                            <!-- <button id="prev">Previous
+                                <div class="triangle-right">O</div>
+                            </button> -->
+        
+                            <button id="prev"><i class="fa-solid fa-backward-step fa-xl"></i></button>
+                            <button id="next"><i class="fa-solid fa-forward-step fa-xl"></i></button>
+                            
+                            <!-- </div> -->
+                            <!-- <div class="next"></div>
+                            <div class="prev"></div> -->
+                        </div>
                         <div class="vinyl">
                             <div class="vinyl-dot"></div>
                         </div>
@@ -73,26 +96,6 @@
 
             <footer class="footer">
                 <!-- <h1>footer </h1> -->
-                <div class="player-frame">
-                    <!-- <div class="song-name"></div> -->
-                    <div class="play">
-                        <div id="slideshow-container" class="play-in"></div>
-                    </div>
-                    <!-- <button class="active">Click</button> -->
-
-                    <button id="pause">Pause</button>   
-                    <button id="play">Play</button> 
-                       
-                    <!-- <div class="buttons"> -->
-                    <!-- <button id="prev">Previous
-                        <div class="triangle-right">O</div>
-                    </button> -->
-                    <button id="prev"><i class="fa-solid fa-backward-step fa-xl"></i></button>
-                    <button id="next"><i class="fa-solid fa-forward-step fa-xl"></i></button>
-                    <!-- </div> -->
-                    <!-- <div class="next"></div>
-                    <div class="prev"></div> -->
-                </div>
             </footer>
 
         </div>

@@ -6,29 +6,39 @@ const db = {
 
 const airtableUrl = `https://api.airtable.com/v0/appqlAk4rdVEwSycH/songs?api_key=keyul7nEZff6Uw7lV`
 
+// const fetchSongs = async () => {
+//     const response = await fetch(airtableUrl).then(data => data.json());
+
+//     const danceGenre = response.records.filter(genre => {
+//       return genre.fields.genre.includes('Dance/Electronic');
+//     });
+
+//     console.log(danceGenre);
+
+//     // buildSlideshow(response.records);
+//     buildSlideshow(danceGenre);
+//     return response.records;
+// };
+
 const fetchSongs = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
 
-    buildSlideshow(response.records);
-    return response.records; 
-    console.log(response);
+    const danceGenre = response.records.filter(item => {
+      const { genre } = item.fields;
+      return genre.includes('Dance/Electronic') || genre.includes('Rock');
+    });
+
+    console.log(danceGenre);
+    console.log(response.records);
+
+    // buildSlideshow(response.records);
+    buildSlideshow(danceGenre);
+    return response.records;
 };
 
 const slideshowContainer = document.getElementById('slideshow-container');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
-
-// let popGenre =[];
-// const fetchSongs = async () => {
-//     const response = await fetch(airtableUrl).then(data => data.json());
-    
-//     popGenre = response.records.filter(genre =>{
-//         return genre.fields.genre === "pop";
-//     });
-//     console.log(popGenre);
-//     buildSlideshow(popGenre);
-//     return response.records;
-// };
 
 const buildSlideshow = (songs) => {
     console.log(songs); 
@@ -85,7 +95,7 @@ const buildSlide = (song) => {
             const posterImg = document.createElement('img');
             posterImg.src = song.fields.poster[0].url;
             posterImg.classList.add('poster');
-            posterImg.id ='jangan';
+            posterImg.id ='poster-img';
             songContainer.append(posterImg);
         }
 
@@ -133,10 +143,10 @@ const buildSlide = (song) => {
 fetchSongs();
 
 document.querySelector("#pause").addEventListener('click', function() {
-	document.querySelector('poster').style.animationPlayState = 'paused';
+	document.querySelector('#poster-img').style.animationPlayState = 'paused';
 });
 
 // play animation
 document.querySelector("#play").addEventListener('click', function() {
-	document.querySelector('poster').style.animationPlayState = 'running';
+	document.querySelector('#poster-img').style.animationPlayState = 'running';
 });

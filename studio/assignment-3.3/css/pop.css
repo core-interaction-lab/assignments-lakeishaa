@@ -16,7 +16,7 @@ a:-webkit-any-link {
 .h1 {
     margin-bottom: 12px;
     font-size: 30px;
-    color: #96A5A3;
+    color: white;
 }
 
 p {
@@ -68,7 +68,7 @@ p {
 
 .genre {
     margin: 40px auto 0px auto;
-    
+    color: white;
 }
 
 .rb-button {
@@ -80,8 +80,8 @@ p {
 }
 
 .rb-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -95,8 +95,8 @@ p {
 }
 
 .pop-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -110,8 +110,8 @@ p {
 }
 
 .hiphop-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -125,8 +125,8 @@ p {
 }
 
 .rock-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -140,8 +140,8 @@ p {
 }
 
 .dance-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -155,8 +155,8 @@ p {
 }
 
 .indie-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -170,8 +170,8 @@ p {
 }
 
 .latin-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #F38B8B;
+    background-color: #ABD3DC;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -192,7 +192,7 @@ p {
 
     background-color: hsla(172, 8%, 62%, 50%);
     height: 80px;
-    width: 500px;
+    width: 400px;
     border-radius: 20px;
     /* box-shadow: 0px 4px 3px rgba(128,128,128, 80%); */
     /* position: relative;
@@ -201,13 +201,13 @@ p {
     margin: auto;
     padding: 5px;
     position: relative;
-    top: 460px;
+    top: 468px;
     justify-content: center;
 }
 
 .song-name {
     position: absolute;
-    top: -40px;
+    top: -43px;
     text-align: center;
     white-space: nowrap;
     opacity: 100%;
@@ -216,12 +216,13 @@ p {
     margin-right: auto; 
     width: 99%;
     /* margin: auto */
+    font-size: 15px;
 
 }
 
 .artist-name {
     position: absolute;
-    top: 35px;
+    top: 29px;
     text-align: center;
     white-space: nowrap;
     opacity: 100%;
@@ -254,26 +255,47 @@ i.fa-solid {
 }
 
 #pause {
+/*     
     position: absolute;
     top: 60%;
     /* margin: auto; */
-    left: 60%;
+    /* left: 60%;  */
+
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #489AD6;
+    color: #FFFFFF;
 }
 
 #play {
-    position: absolute;
+    /* position: absolute;
     top: 60%;
     margin: auto;
-    left: 30%;
+    left: 30%; */
+
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #489AD6;
+    color: #FFFFFF;
 }
 
 #prev {
     position: absolute;
-    top: 37%;
-    left: 20%;
+    top: 55%;
+    left: 25%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    background-color: #489AD6;
+    color: #FFFFFF;
 }
 
 /* #triangle-right {
@@ -286,18 +308,20 @@ i.fa-solid {
 
 #next {
     position: absolute;
-    top: 37%;
-    right: 20%;
+    top: 55%;
+    right: 25%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    background-color: #489AD6;
+    color: #FFFFFF;
 }
 
 .main {
-    background-color: #d4d9de;
+    background-color: #F38B8B;
     height: auto;
     width: 600px;
-    border: 60px solid #D8D8D8;
+    border: 60px solid #F38B8B;
     border-radius: 25px;
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
     position: fixed;
@@ -317,7 +341,7 @@ i.fa-solid {
     vertical-align: middle; */
 
 
-    background-image: radial-gradient(#7f8799 10%, #FFFBF7 10%);
+    background-image: radial-gradient(#E8E8E8 10%, #E8E8E8 10%);
     background-position: 0 0;
     background-size: 35px 34px;
     height: 380px;
@@ -326,7 +350,7 @@ i.fa-solid {
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
 }
 
-#jangan.poster {
+#poster-img {
     z-index: 1;
 }
 
@@ -334,7 +358,7 @@ i.fa-solid {
     height: 150px;
     width: auto;
 
-    top: -345px;
+    top: -352px;
     left: -80px;
     position: relative;
     z-index: 1;
@@ -355,7 +379,7 @@ i.fa-solid {
   }
 
 .vinyl {
-    background-color: #d4d9de;
+    background-color: #45444A;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 70%); */
     box-shadow: 2px 5px 4px rgba(128,128,128, 80%);
     width: 300px;

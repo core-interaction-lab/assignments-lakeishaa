@@ -2,7 +2,7 @@ body {
     display: block;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #2B2D2E;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -16,7 +16,7 @@ a:-webkit-any-link {
 .h1 {
     margin-bottom: 12px;
     font-size: 30px;
-    color: #96A5A3;
+    color: #D12525;
 }
 
 p {
@@ -46,7 +46,7 @@ p {
 }
 
 .header {
-    background-color: #2B2D2E;
+    background-color: #000000;
     height: 130px;
 }
 
@@ -75,13 +75,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .rb-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #2B2D2E;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -90,13 +90,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .pop-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -105,13 +105,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .hiphop-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -120,13 +120,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .rock-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -135,13 +135,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .dance-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -150,13 +150,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .indie-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -165,19 +165,19 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #B8D6DF;
+    background-color: #FFFFFF;
     box-shadow: 0px 4px 3px grey;
 }
 
 .latin-button:hover {
-    outline: 5px solid #96A5A3;
-    background-color: #FBF4ED;
+    outline: 5px solid #D12525;
+    background-color: #000000;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
 
 .footer{
-    background-color: #2B2D2E;
+    background-color: #000000;
     height: 100px;
 }
 
@@ -190,9 +190,9 @@ p {
     left: 63px;
     position: relative; */
 
-    background-color: hsla(172, 8%, 62%, 50%);
-    height: 100px;
-    width: 500px;
+    background-color: #B5B5B5;
+    height: 80px;
+    width: 400px;
     border-radius: 20px;
     /* box-shadow: 0px 4px 3px rgba(128,128,128, 80%); */
     /* position: relative;
@@ -201,35 +201,37 @@ p {
     margin: auto;
     padding: 5px;
     position: relative;
-    top: 150px;
+    top: 468px;
     justify-content: center;
 }
 
 .song-name {
     position: absolute;
-    top: -40px;
+    top: -43px;
     text-align: center;
     white-space: nowrap;
     opacity: 100%;
-    left: 0px;
-    text-align:justify;
-    margin-left: 40%;
-    margin-right: 60%; 
+    /* left: 0px; */
+    margin-left: auto;
+    margin-right: auto; 
+    width: 99%;
     /* margin: auto */
+    font-size: 15px;
 
 }
 
 .artist-name {
     position: absolute;
-    top: 35px;
+    top: 29px;
     text-align: center;
     white-space: nowrap;
     opacity: 100%;
     font-size: 12px;
     /* left: 20%; */
     /* text-align:justify; */
-    margin-left: 40%;
-    margin-right: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
     /* margin: auto *;/
 }
 
@@ -253,51 +255,74 @@ i.fa-solid {
 }
 
 #pause {
+/*     
     position: absolute;
     top: 60%;
     /* margin: auto; */
-    left: 60%;
+    /* left: 60%;  */
+
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #D12525;
+    color: white;
 }
 
 #play {
-    position: absolute;
+    /* position: absolute;
     top: 60%;
     margin: auto;
-    left: 30%;
+    left: 30%; */
+
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #D12525;
+    color: white;
 }
 
 #prev {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 55%;
+    left: 25%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 10px;
+    width: 32px;
+    height: 32px;
+    background-color: #D12525;
+    color: white;
 }
 
-#triangle-right {
+/* #triangle-right {
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
     border-left: 20px solid red;
     border-bottom: 15px solid transparent;
-  }
+  } */
 
 #next {
     position: absolute;
-    top: 30%;
-    left: 70%;
+    top: 55%;
+    right: 25%;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+    background-color: #D12525;
+    color: white;
 }
 
 .main {
-    background-color: #d4d9de;
+    background-color: #000000;
     height: auto;
     width: 600px;
-    border: 60px solid #D8D8D8;
+    border: 60px solid #000000;
+    outline: 3px solid #FFFFFF;
     border-radius: 25px;
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
     position: fixed;
@@ -317,7 +342,7 @@ i.fa-solid {
     vertical-align: middle; */
 
 
-    background-image: radial-gradient(#7f8799 10%, #FFFBF7 10%);
+    background-image: radial-gradient(#D12525 10%, #D12525 10%);
     background-position: 0 0;
     background-size: 35px 34px;
     height: 380px;
@@ -326,17 +351,21 @@ i.fa-solid {
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
 }
 
+#poster-img {
+    z-index: 1;
+}
+
 .poster {
-    height: 200px;
+    height: 150px;
     width: auto;
 
-    top: -350px;
+    top: -352px;
     left: -80px;
     position: relative;
     /* z-index: 1; */
 
-    /* -webkit-animation:spin 7s linear infinite;
-    -moz-animation:spin 7s linear infinite; */
+    -webkit-animation:spin 7s linear infinite;
+    -moz-animation:spin 7s linear infinite;
     animation: rotation 9s infinite linear;
     animation-delay: 1.5s;
 }
@@ -351,7 +380,7 @@ i.fa-solid {
   }
 
 .vinyl {
-    background-color: #d4d9de;
+    background-color: #45444A;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 70%); */
     box-shadow: 2px 5px 4px rgba(128,128,128, 80%);
     width: 300px;
@@ -359,11 +388,12 @@ i.fa-solid {
     border-radius: 50%;
     margin: 0;
     position: relative;
-    top: 50px;
+    top: -50px;
     left: 70px;
     display: table-cell;
     vertical-align: middle;
 }
+
 
 .vinyl-dot {
     background-color: #45444A;
@@ -373,22 +403,24 @@ i.fa-solid {
     margin: auto;
     position: relative;
     display: inline-block;
+    z-index: 3;
 }
 
 .scratcher-out {
-    background-color: #B3C5C2;
+    background-color: #B5B5B5;
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    top: -450px;
+    top: -490px;
     left: 430px;
     position: relative;
     animation: scratcher 1s linear;
+    z-index: 2;
 }
 
 @keyframes scratcher {
     from {
-      transform: rotate(-50deg);
+      transform: rotate(-80deg);
     }
     to {
       transform: rotate(0deg);
@@ -396,7 +428,8 @@ i.fa-solid {
   }
 
 .scracther-in {
-    background-color: #96A5A3;
+    background-color: #2C2E2D;
+    outline: 4px solid #DDDDDD;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -406,18 +439,19 @@ i.fa-solid {
 }
 
 .handle-out {
-    background-color: #96A5A3;
+    background-color: #2D2D2D;
     width: 10px;
     height: 220px;
     top: -40px;
     left: 10px;
     transform: rotate(30deg);
     position: relative;
+    z-index: -1;
     /* z-index: 2; */
 }
 
 .handle-in {
-    background-color: #96A5A3;
+    background-color: #2D2D2D;
     width: 10px;
     height: 130px;
     top: -95px;
@@ -427,7 +461,7 @@ i.fa-solid {
 }
 
 .needle-out {
-    background-color: #96A5A3;
+    background-color: #DDDDDD;
     border-radius: 20px;
     width: 35px;
     height: 55px;
@@ -440,7 +474,7 @@ i.fa-solid {
 .needle-in {
     width: 20px;
     height: 30px;
-    background: #96A5A3;
+    background: #DDDDDD;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(-200deg);
     top: -185px;
@@ -449,7 +483,7 @@ i.fa-solid {
 }
 
 .topper-in {
-    background-color: #96A5A3;
+    background-color: #DDDDDD;
     border-radius: 10px;
     width: 25px;
     height: 50px;
@@ -461,7 +495,7 @@ i.fa-solid {
 
 /* record player */
 
-@media all and (max-width: 800px){
+@media all and (min-width: 800px){
     .main {
         flex: 2;
     }
@@ -482,19 +516,11 @@ i.fa-solid {
         order: 4;
     }
 
-    .genre-button {
-        padding: 0 100px;
-        margin: 10px;
-    }
-
 }
 
-@media all and (max-width: 600px) {
+@media all and (min-width: 600px) {
     .aside {
         flex: 1;
-    }
-    .genre-button {
-        padding: 0 80px;
     }
 }
 

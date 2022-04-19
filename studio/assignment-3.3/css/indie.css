@@ -2,7 +2,7 @@ body {
     display: block;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #1D1D1D;
+    background-color: #BB6F62;
     overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ p {
 }
 
 .header {
-    background-color: #1D1D1D;
+    background-color: #BB6F62;
     height: 130px;
 }
 
@@ -75,13 +75,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .rb-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -90,13 +90,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .pop-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -105,13 +105,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .hiphop-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -120,13 +120,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .rock-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -135,13 +135,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .dance-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -150,13 +150,13 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .indie-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
@@ -165,19 +165,19 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #489AD6;
+    background-color: #B3C5C2;
     box-shadow: 0px 4px 3px grey;
 }
 
 .latin-button:hover {
-    outline: 5px solid #FFFFFF;
-    background-color: #1D1D1D;
+    outline: 5px solid #E7D9AA;
+    background-color: #BB6F62;
     outline-offset: -5px;
     box-shadow: 0px 0px 0px grey;
 }
 
 .footer{
-    background-color: #1D1D1D;
+    background-color: #BB6F62;
     height: 100px;
 }
 
@@ -190,7 +190,7 @@ p {
     left: 63px;
     position: relative; */
 
-    background-color: #FFFFFF;
+    background-color: #B3C5C2;
     height: 80px;
     width: 400px;
     border-radius: 20px;
@@ -267,7 +267,7 @@ i.fa-solid {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    background-color: #0075CA;
+    background-color: #7C634C;
     color: white;
 }
 
@@ -283,7 +283,7 @@ i.fa-solid {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    background-color: #0075CA;
+    background-color: #7C634C;
     color: white;
 }
 
@@ -294,7 +294,7 @@ i.fa-solid {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    background-color: #0075CA;
+    background-color: #7C634C;
     color: white;
 }
 
@@ -313,16 +313,15 @@ i.fa-solid {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    background-color: #0075CA;
+    background-color: #7C634C;
     color: white;
 }
 
 .main {
-    background-color: #8D1DB5;
-    outline: 3px solid white;
+    background-color: #5A9DA3;
     height: auto;
     width: 600px;
-    border: 60px solid #8D1DB5;
+    border: 60px solid #5A9DA3;
     border-radius: 25px;
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
     position: fixed;
@@ -342,9 +341,8 @@ i.fa-solid {
     vertical-align: middle; */
 
 
-    background-image: radial-gradient(#88BCE1 10%, #88BCE1 10%);
+    background-image: radial-gradient(#7f8799 10%, #E7D9AA 10%);
     background-position: 0 0;
-    outline: 4px solid black;
     background-size: 35px 34px;
     height: 380px;
     width: 100%;
@@ -407,7 +405,7 @@ i.fa-solid {
 }
 
 .scratcher-out {
-    background-color: #489AD6;
+    background-color: #7C634C;
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -429,7 +427,7 @@ i.fa-solid {
 
 .scracther-in {
     background-color: #2C2E2D;
-    outline: 5px solid #0075CA;
+    outline: 4px solid white;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -439,7 +437,7 @@ i.fa-solid {
 }
 
 .handle-out {
-    background-color: #2C2E2D;
+    background-color: #68827E;
     width: 10px;
     height: 220px;
     top: -40px;
@@ -451,7 +449,7 @@ i.fa-solid {
 }
 
 .handle-in {
-    background-color: #2C2E2D;
+    background-color: #68827E;
     width: 10px;
     height: 130px;
     top: -95px;
@@ -461,7 +459,7 @@ i.fa-solid {
 }
 
 .needle-out {
-    background-color: #FFFFFF;
+    background-color: #68827E;
     border-radius: 20px;
     width: 35px;
     height: 55px;
@@ -474,7 +472,7 @@ i.fa-solid {
 .needle-in {
     width: 20px;
     height: 30px;
-    background: #FFFFFF;
+    background: #68827E;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(-200deg);
     top: -185px;
@@ -483,7 +481,7 @@ i.fa-solid {
 }
 
 .topper-in {
-    background-color: #FFFFFF;
+    background-color: #68827E;
     border-radius: 10px;
     width: 25px;
     height: 50px;
