@@ -10,7 +10,7 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: red;
 }
 
 .h1 {

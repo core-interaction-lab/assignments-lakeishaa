@@ -10,13 +10,13 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: #E7D9AA;
 }
 
 .h1 {
     margin-bottom: 12px;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #E7D9AA;
 }
 
 p {

@@ -10,7 +10,7 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .h1 {
@@ -316,6 +316,7 @@ i.fa-solid {
 }
 
 .main {
+    outline: 4px solid #000000;
     background-color: #E2CB4F;
     height: auto;
     width: 600px;
@@ -338,7 +339,7 @@ i.fa-solid {
     display: table-cell;
     vertical-align: middle; */
 
-
+    outline: 4px solid;
     background-image: radial-gradient(#000000 10%, #000000 10%);
     background-position: 0 0;
     background-size: 35px 34px;
