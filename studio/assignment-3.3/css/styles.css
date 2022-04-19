@@ -460,7 +460,7 @@ i.fa-solid {
 
 /* record player */
 
-@media all and (min-width: 800px){
+@media all and (max-width: 800px){
     .main {
         flex: 2;
     }
@@ -481,11 +481,19 @@ i.fa-solid {
         order: 4;
     }
 
+    .genre-button {
+        padding: 0 100px;
+        margin: 10px;
+    }
+
 }
 
-@media all and (min-width: 600px) {
+@media all and (max-width: 600px) {
     .aside {
         flex: 1;
+    }
+    .genre-button {
+        padding: 0 80px;
     }
 }
 

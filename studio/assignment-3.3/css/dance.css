@@ -2,7 +2,7 @@ body {
     display: block;
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #ABD3DC;
+    background-color: #1D1D1D;
     overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ p {
 }
 
 .header {
-    background-color: #ABD3DC;
+    background-color: #1D1D1D;
     height: 130px;
 }
 
@@ -68,7 +68,7 @@ p {
 
 .genre {
     margin: 40px auto 0px auto;
-    
+    color: white;
 }
 
 .rb-button {
@@ -177,7 +177,7 @@ p {
 }
 
 .footer{
-    background-color: #ABD3DC;
+    background-color: #1D1D1D;
     height: 100px;
 }
 
@@ -297,7 +297,7 @@ i.fa-solid {
     background-color: #d4d9de;
     height: auto;
     width: 600px;
-    border: 60px solid #D8D8D8;
+    border: 60px solid #8D1DB5;
     border-radius: 25px;
     box-shadow: 0px 4px 3px rgba(128,128,128, 80%);
     position: fixed;

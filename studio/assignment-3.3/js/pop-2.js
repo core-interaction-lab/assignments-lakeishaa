@@ -8,32 +8,27 @@ const airtableUrl = `https://api.airtable.com/v0/appqlAk4rdVEwSycH/songs?api_key
 
 const fetchSongs = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
-    songsArray = response.records;
 
-    // const popSongs = songsArray.filter(song => {
-    //     if (song.fields.genre) === "Pop") {
-    //         return true;
-    //     }
-    
-    //     return false;
-    // });
-
-    // console.log(popSongs);
-
-    buildSlideshow(popSongs);
-    // buildSlideshow(response.records);
+    buildSlideshow(response.records);
     return response.records; 
+    console.log(response);
 };
-
-
-// const pop
-// const filteredRecords = popRecords.filter(pop => GeolocationPositionError.fields.description, true);
-// console.log(filteredRecords);
 
 const slideshowContainer = document.getElementById('slideshow-container');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
+// let popGenre =[];
+// const fetchSongs = async () => {
+//     const response = await fetch(airtableUrl).then(data => data.json());
+    
+//     popGenre = response.records.filter(genre =>{
+//         return genre.fields.genre === "pop";
+//     });
+//     console.log(popGenre);
+//     buildSlideshow(popGenre);
+//     return response.records;
+// };
 
 const buildSlideshow = (songs) => {
     console.log(songs); 
@@ -84,13 +79,6 @@ const swapSlide = (songRecord) => {
 }
 
 const buildSlide = (song) => {
-
-    var posterContainer = document.querySelector(".poster");
-    var genreActions = song.fields.genre;
-    genreActions.forEach(function (b) {
-      posterContainer.classList.add(b);
-    });
-
     const songContainer = document.createElement('article');
     if (song.fields.poster) {
             console.log(song.fields.poster[0].url);
