@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: bold;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  
+  h1 {
+    /* margin: auto; */
+    text-align: center;
+    font-size: 130px;
+    margin: 10px auto -20px auto;
+    color: #8B008B;
+  }
+
+  h2 {
+    /* margin: auto; */
+    text-align: center;
+    font-size: 35px;
+    margin: 20px auto 10px auto;
+    color: #8B008B;
+  }
+
+  img {
+    height: 500px;
+    margin: 60px auto 10px auto;
+    /* width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; */
+    border: solid 12px #8B008B;
+    /* float: left; */
+    /* display: flex; */
+  }
+
+.name {
+    font-size: 30px;
+}
