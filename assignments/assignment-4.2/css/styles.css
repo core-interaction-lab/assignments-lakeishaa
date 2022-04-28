@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Bebas Neue', cursive;
     font-style: bold;
     text-align: center;
     color: white;
@@ -10,8 +10,8 @@ body {
   h1 {
     /* margin: auto; */
     text-align: center;
-    font-size: 130px;
-    margin: 10px auto -20px auto;
+    font-size: 110px;
+    margin: -20px auto -60px auto;
     color: #8B008B;
   }
 
@@ -19,7 +19,7 @@ body {
     /* margin: auto; */
     text-align: center;
     font-size: 35px;
-    margin: 20px auto 10px auto;
+    margin: 20px auto 0px auto;
     color: #8B008B;
   }
 
