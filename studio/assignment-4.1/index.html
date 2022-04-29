@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Camera</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+
+    <body>
+        <!-- <div class="container text-center">
+            <h1>Accessing Webcam with JS</h1>
+        </div> -->
+
+        <div id="camera"></div>
+        <button onclick="take_snapshot()">Take Snapshot</button>
+        
+        <!-- <script src="main.js"></script> -->
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js">
+    <script>
+
+        webcam.set({
+            width: 350,
+            height: 350,
+            image_format: 'jpeg',
+            jpeg_quality: 90
+        })
+        webcam.attach("#camera")
+
+        function take_snapshot(){
+
+        }
+    </script>
+</html>
