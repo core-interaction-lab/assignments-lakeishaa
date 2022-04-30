@@ -50,9 +50,9 @@ const buildAlbums = albums => {
         albumContainer.append(imgEl);
 
         const container = document.createElement('article');
-        const nameEL = document.createElement("div");
-        const release_dateEl = document.createElement("div");
-        const total_tracksEl = document.createElement("div");
+        const nameEL = document.createElement('div');
+        const release_dateEl = document.createElement('div');
+        const total_tracksEl = document.createElement('div');
         const urlEl = document.createElement('a');
 
         nameEL.innerHTML = item.name;
@@ -64,8 +64,8 @@ const buildAlbums = albums => {
         total_tracksEl.innerHTML = item.total_tracks;
         total_tracksEl.classList.add("total_tracks");
 
-        urlEl.innerHTML = item.url;
-        urlEl.classList.add('url');
+        urlEl.innerHTML = item.href;
+        urlEl.classList.add("url");
         
         container.append(nameEL);
         container.append(release_dateEl);

@@ -39,3 +39,7 @@ body {
 .name {
     font-size: 30px;
 }
+
+.url {
+  font-size: 12px;
+}
