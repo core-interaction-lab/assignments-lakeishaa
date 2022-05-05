@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<title>Online Hair Salon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Taprom&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		var but = document.getElementById("but");
+		var video = document.getElementById("vid");
+		var mediaDevices = navigator.mediaDevices;
+		vid.muted = true;
+		but.addEventListener("click", () => {
+
+		// Accessing the user camera and video.
+		mediaDevices
+			.getUserMedia({
+			video: true,
+			audio: true,
+			})
+			.then((stream) => {
+
+			// Changing the source of video to current stream.
+			video.srcObject = stream;
+			video.addEventListener("loadedmetadata", () => {
+				video.play();
+			});
+			})
+			.catch(alert);
+		});
+	});
+	</script>
+</head>
+
+<body>
+  
+  <div><img class="background" src="./images/wallpaper-2.jpg"></div>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <h1 class="h1">Choose A Hairstyle</h1>
+      <div><img class="titleframe" src="./images/titleframe.png"></div>
+    </header>
+
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img class="blue_hair" src="./images/blue_hair.png" id="lastClone" alt="blue_hair">
+        <img class="hair-2" src="./images/hair-2.png" alt="hair-2">
+        <img class="hair-3" src="./images/hair-3.png" id="fClone" alt="hair-3">
+      </div>
+    </div>
+
+    <!-- <div class="hair">
+      <div><img class="blue_hair" src="./images/blue_hair.png"></div>
+    </div> -->
+
+    <div class="frame">
+      <div><img class="frame" src="./images/frame.png"></div>
+      <div><img class="mirror-button" src="./images/mirror-button.png"></div>
+    </div>
+
+    <div class="table">
+      <div><img class="table" src="./images/table-1.png"></div>
+    </div>
+
+
+	  <center>
+	  <div class="cam">
+		  <video id="vid"></video>
+	  </div>
+	  <br />
+	  <button id="but" autoplay>
+	  	Look In Mirror
+	  </button>
+	  </center>
+
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+
+  </div>
+
+  <script src=main.js></script>
+</body>
+</html>

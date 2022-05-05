@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0" />
+    <title>Online Salon</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+  <body>
+    <div><img class="background-2" src="./images/wallpaper-2.jpg"></div>
+    
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="h1">Choose A Hairstyle</h1>
+        <div><img class="titleframe" src="./images/titleframe.png"></div>
+
+      </header>
+
+      <div class="hair">
+        <div><img class="blue_hair" src="./images/blue_hair.png"></div>
+      </div>
+
+      <!-- <div class="frame">
+        <div><img class="frame" src="./images/frame.png"></div>
+      </div> -->
+
+      <div class="table">
+        <div><img class="table" src="./images/table-1.png"></div>
+      </div>
+
+      <div class="button">
+        <button id ="prev">Previous</button>
+        <button id ="next">Next</buttom>
+      </div>
+
+      <center>
+      <div class="cam">
+        <div>
+          <video id="vid"></video>
+        </div>
+        <br/>
+        <button id="but" autoplay>
+          Open WebCam
+        </button>
+      </div>
+      </center>
+
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      var but = document.getElementById("but");
+      var video = document.getElementById("vid");
+      var mediaDevices = navigator.mediaDevices;
+      vid.muted = true;
+      but.addEventListener("click", () => {
+  
+        // Accessing the user camera and video.
+        mediaDevices
+          .getUserMedia({
+            video: true,
+            audio: true,
+          })
+          .then((stream) => {
+  
+            // Changing the source of video to current stream.
+            video.srcObject = stream;
+            video.addEventListener("loadedmetadata", () => {
+              video.play();
+            });
+          })
+          .catch(alert);
+      });
+      });
+    </script>
+
+  <script src=main.js></script>
+
+  </body>
+</html>
