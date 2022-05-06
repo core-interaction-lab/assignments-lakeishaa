@@ -42,8 +42,8 @@ body {
 }
 
 #add-todo-btn {
-    height: 60px;
-
+    height: 30px;
+    border-radius: 20%;
 }
 
 #todo-container{

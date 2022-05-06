@@ -21,6 +21,13 @@ window.onload = function () {
     startTimer(fiveMinutes, display);
 };
 
+
+function myFunction() {
+    alert('Times Up');
+  }
+
+
+
 const todoTextarea = document.getElementById('todo-textarea');
 const addTodoBtn = document.getElementById('add-todo-btn');
 const todoContainer = document.getElementById('todo-container');
