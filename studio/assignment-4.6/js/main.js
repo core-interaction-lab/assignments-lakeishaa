@@ -23,9 +23,12 @@
 
 function changeImage(){
     let displayImage = document.getElementById('image1')
-    if (displayImage.src.match('./images/wallpaper-2.jpg')){
+    if (displayImage.src.includes('/images/wallpaper-2.jpg')){
             displayImage.src = './images/wallpaper-3.jpeg'
     } else {
         displayImage.src = './images/wallpaper-2.jpg'
     }
+
+    console.log(displayImage.src);
 }
+
