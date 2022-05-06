@@ -20,14 +20,20 @@ body {
     position: absolute;
 	z-index: -1;
 }
+
+.background:hover {
+    cursor: pointer;
+}
   
 .cam {
 	width: 500px;
 	height: 400px;
 	border: 2px solid black;
-	position: relative;
+	position: absolute;
+    left: 50.5%;
+    top: 350px;
+    transform: translate(-50%, -50%);
 	z-index: 2;
-	top: -200px;
 	background-color: #F0F8FF;
 	background: linear-gradient(#8b99a7, #e6f3ff, #8b99a7);
 }
@@ -36,74 +42,94 @@ video {
     width: 500px;
 	height: 400px;
 	object-fit: cover;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
 }
 
 #but {
     /* margin-left: auto;
     margin-left: auto;
     display: block; */
-    z-index: 7;
-	position: relative;
-	top: -196px;
+    z-index: 15;
+	top: 620px;
 	font-family: 'Taprom', cursive;
 	font-size: 18px;
 	background-color: #fff7e9;
 	border: none;
+    /* top: 50%; */
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
 }
 
 .mirror-button {
 	width: 250px;
     height: 120px;
     position: fixed;
-    top: 538px;
     z-index: 4;
-    margin-left: 37%;
-	left: 57px;
-	display: block;
+    
+    position: absolute;
+    left: 50%;
+    top: 566px;
+    transform: translate(-50%, -50%);
 }
 
 .titleframe {
     width: 350px;
     height: auto;
-    position: fixed;
-    top: 0px;
+    /* position: fixed; */
+    top: 55px;
     z-index: 4;
-    margin-left: 37%;
-	left: 10px;
+    /* margin-left: 37%;
+	left: 10px; */
 	display: block;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
 }
 
 .h1 {
     color: black;
-    top: 40px;
+    top: 58px;
 	text-align: center;
-    position: fixed;
-	/* margin-left: 50%;
-	margin-right: 50%; */
-	margin-left: 44%;
-	/* margin-right: 50%; */
+    /* position: fixed; */
 	font-size: 25px;
     z-index: 5;
     font-family: 'Taprom', cursive;
+
+    display: block;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
 }
 
 .frame {
-	width: 680px;
+	width: 677px;
     height: 500px;
-    position: fixed;
-    top: 85px;
-    z-index: 4;
-    left: 370px;
+    /* position: fixed;
+    top: 85px; */
+    z-index: 10;
+    /* left: 370px; */
 	/* opacity: 50%; */
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
 }
 
 .table {
     width: 1100px;
     height: auto;
-    position: fixed;
-    top: 600px;
+    top: 550px;
     z-index: 4;
-    left: 150px;
+
+    display: block;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
 }
 
 /* .blue_hair {
@@ -181,18 +207,29 @@ video {
 	.prev, .next {
 	  cursor: pointer;
 	  position: absolute;
-	  top: 50%;
+	  top: 310px;
 	  width: auto;
 	  padding: 16px;
-	  margin-top: -22px;
+	  /* margin-top: -22px; */
+      margin: -22px -55px auto -55px;
 	  color: white;
 	  font-weight: bold;
-	  font-size: 18px;
+	  font-size: 30px;
 	  transition: 0.6s ease;
 	  border-radius: 0 3px 3px 0;
 	  user-select: none;
 	}
 	
+    .prev-arrow {
+        width: 110px;
+        height: auto;
+    }
+
+    .next-arrow {
+        width: 110px;
+        height: auto;
+    }
+
 	/* Position the "next button" to the right */
 	.next {
 	  right: 0;
@@ -200,10 +237,32 @@ video {
 	}
 	
 	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover, .next:hover {
-	  background-color: rgba(0,0,0,0.8);
+	.prev:hover {
+	  /* background-color: rgba(0,0,0,0.8); */
+        animation: pulse 1s infinite;
+        animation-timing-function: linear;   
 	}
-	
+
+    .next:hover {
+        /* background-color: rgba(0,0,0,0.8); */
+          animation: pulsenext 1s infinite;
+          animation-timing-function: linear;   
+      }
+    
+    @keyframes pulse {
+        0% { transform: scale(1) rotate(0.5deg); }
+        50% { transform: scale(1.2) rotate(-4deg);
+        100% { transform: scale(1) rotate(0.5deg); }
+        }
+      }
+
+    @keyframes pulsenext {
+        0% { transform: scale(1) rotate(0.5deg); }
+        50% { transform: scale(1.2) rotate(4deg);
+        100% { transform: scale(1) rotate(0.5deg); }
+        }
+      }  
+
 	/* Caption text */
 	.text {
 	  color: #f2f2f2;

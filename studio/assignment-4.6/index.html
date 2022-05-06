@@ -44,12 +44,16 @@
 
 <body>
   
-  <div><img class="background" src="./images/wallpaper-2.jpg"></div>
+	<div id="container-background">
+		<!-- <div><img id="image1" class="background" src="./images/wallpaper-2.jpg" alt="" onclick="changeImage()"></div> -->
+  		<div><img class="background" src="./images/wallpaper-3.jpeg"></div>
+  		<!-- <div><img class="background" src="./images/wallpaper-4.jpg"></div> --> -->
+	</div>
 
-  <div class="wrapper">
-    <header class="header">
-      <h1 class="h1">Choose A Hairstyle</h1>
-      <div><img class="titleframe" src="./images/titleframe.png"></div>
+  	<div class="wrapper">
+    	<header class="header">
+      	<h1 class="h1">Choose A Hairstyle</h1>
+      	<div><img class="titleframe" src="./images/titleframe.png"></div>
     </header>
     <!-- <div class="hair">
       <div><img class="blue_hair" src="./images/blue_hair.png"></div>
@@ -71,8 +75,16 @@
 		  <img src="./images/hair-3.png" style="width:100%">
 		  <!-- <div class="text">Caption Three</div> -->
 		</div>
-		<a class="prev" onclick="plusSlides(-1)">❮</a>
-		<a class="next" onclick="plusSlides(1)">❯</a>
+		<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a> -->
+
+		<a class="prev" onclick="plusSlides(-1)">
+			<img class="prev-arrow" src ="./images/hand_arrow.png">
+		</a>
+		<a class="next" onclick="plusSlides(1)">
+			<img class="next-arrow"src ="./images/hand_arrow_2.png">
+		</a>
+
 	  </div>
 		<br>
 		<div style="text-align:center">
@@ -95,7 +107,11 @@
 	  <br />
 	  <button id="but" autoplay>
 	  	Look In Mirror
+		  <!-- before u click button is display none n after display block -->
 	  </button>
+
+	  <!-- <input id="but" autoplay type="button" value="Look In Mirror" /> -->
+
 	  </center>
 
     <!-- <button id="prevBtn">Prev</button>
@@ -132,6 +148,6 @@
 	}
 	</script>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
