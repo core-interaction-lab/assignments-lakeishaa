@@ -45,3 +45,11 @@ body {
     height: 60px;
 
 }
+
+#todo-container{
+    padding: 20px;
+}
+
+#time, .timer {
+    color: #CD5C5C;
+}
