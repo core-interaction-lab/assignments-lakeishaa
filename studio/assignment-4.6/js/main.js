@@ -30,7 +30,7 @@ function changeImage(){
             displayImage.src = './images/wallpaper-3.jpeg'
             displayImage.src = './images/wallpaper-4.jpg' //??//
             displayImage.src = './images/wallpaper-5.jpg'
-            displayImage.src = './images/wallpaper-6.png'
+            displayImage.src = './images/wallpaper-6.jpg'
     } else {
         displayImage.src = './images/wallpaper-2.jpg'
     }

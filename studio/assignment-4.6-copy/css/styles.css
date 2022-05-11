@@ -12,6 +12,15 @@ body {
 	font-family: 'Taprom', cursive;
 }
 
+/* #vid {
+    -mox-transofrm: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* -ms-filter: fliph;
+    filter: fliph; */
+} */
+
 .wrapper {
     pointer-events: none;
     position: absolute;
@@ -60,7 +69,8 @@ video {
     position: absolute;
     left: 50%;
     top: 200px;
-    transform: translate(-50%, -50%) scaleX(-1);
+    transform: translate(-50%, -50%);
+    transform: scaleX(-1);
 }
 
 #but {
@@ -254,8 +264,7 @@ img.hair-5 {
     width: 10px;
     height: auto;
     position: absolute;
-    top: -40px;
-    left: 10px;
+    top: -20px;
     display: block;
     z-index: 4;
     transform: scale(1);
@@ -285,7 +294,7 @@ img.hair-8 {
     width: 10px;
     height: auto;
     position: absolute;
-    top: 80px;
+    top: 80px; 
     display: block;
     z-index: 4;
     transform: scale(1.5);
