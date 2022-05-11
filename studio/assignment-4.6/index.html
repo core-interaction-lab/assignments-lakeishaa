@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0" />
+	content="width=device-width, initial-scale=1.0" />
 	<title>Online Hair Salon</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,104 +48,143 @@
 		<!-- <div><img id="image1" class="background" src="./images/wallpaper-2.jpg" alt="" onclick="changeImage()"></div> -->
   		<div><img id="image1" class="background" src="./images/wallpaper-3.jpeg" onclick="changeImage()"></div>
   		<!-- <div><img id="image1" class="background" src="./images/wallpaper-4.jpg" onclick="changeImage()"></div> -->
+		  <!-- <div><img id="image1" class="background" src="./images/wallpaper-5.jpg" onclick="changeImage()"></div> -->
+		  <!-- <div><img id="image1" class="background" src="./images/wallpaper-6.png" onclick="changeImage()"></div> -->
 	</div>
 
-  	<div class="wrapper">
-    	<header class="header">
-      	<h1 class="h1">Choose A Hairstyle</h1>
-      	<div><img class="titleframe" src="./images/titleframe.png"></div>
-    </header>
-    <!-- <div class="hair">
-      <div><img class="blue_hair" src="./images/blue_hair.png"></div>
-    </div> -->
-
-	<div class="slideshow-container">
-		<div class="mySlides fade">
-		  <!-- <div class="numbertext">1 / 3</div> -->
-		  <img class="blue_hair" src="./images/blue_hair.png" style="width:100%">
-		  <!-- <div class="text">Caption Text</div> -->
-		</div>
-		<div class="mySlides fade">
-		  <!-- <div class="numbertext">2 / 3</div> -->
-		  <img src="./images/hair-2.png" style="width:100%">
-		  <!-- <div class="text">Caption Two</div> -->
-		</div>
-		<div class="mySlides fade">
-		  <!-- <div class="numbertext">3 / 3</div> -->
-		  <img src="./images/hair-3.png" style="width:100%">
-		  <!-- <div class="text">Caption Three</div> -->
-		</div>
-		<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
-		<a class="next" onclick="plusSlides(1)">❯</a> -->
-
+	<div id="arrows">
 		<a class="prev" onclick="plusSlides(-1)">
 			<img class="prev-arrow" src ="./images/hand_arrow.png">
 		</a>
 		<a class="next" onclick="plusSlides(1)">
 			<img class="next-arrow"src ="./images/hand_arrow_2.png">
 		</a>
+	</div>
 
-	  </div>
+	<button type="button" onclick="show()" id="but" autoplay>
+		Look In Mirror
+		<!-- before u click button is display none n after display block -->
+	</button>
+
+  	<div class="wrapper">
+    	<header class="header">
+      		<h1 class="h1">Choose A Hairstyle</h1>
+      		<div><img class="titleframe" src="./images/titleframe.png"></div>
+    	</header>
+   		<!-- <div class="hair">
+      	<div><img class="blue_hair" src="./images/blue_hair.png"></div>
+    	</div> -->
+
+		<div id="slideshow-container">
+			<div class="mySlides fade">
+		  	<!-- <div class="numbertext">1 / 3</div> -->
+		  		<img class="hair-11" src="./images/hair-11.png" style="width:100%">
+		  	<!-- <div class="text">Caption Text</div> -->
+			</div>
+			<div class="mySlides fade">
+		  	<!-- <div class="numbertext">2 / 3</div> -->
+		  		<img class="hair-2" src="./images/hair-2.png" style="width:100%">
+		  	<!-- <div class="text">Caption Two</div> -->
+			</div>
+			<div class="mySlides fade">
+		  	<!-- <div class="numbertext">3 / 3</div> -->
+		  		<img class="hair-3" src="./images/hair-3.png" style="width:100%">
+		  	<!-- <div class="text">Caption Three</div> -->
+			</div>
+			<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a> -->
+			<div class="mySlides fade">
+					<img class="hair-4" src="./images/hair-4.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+					<img class="hair-5" src="./images/hair-5.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img class="hair-6" src="./images/hair-6.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img class="hair-7" src="./images/hair-7.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img class="hair-8" src="./images/hair-8.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+					<img class="hair-9" src="./images/hair-9.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img class="hair-10" src="./images/hair-10.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img class="hair-11" src="./images/hair-1.png" style="width:100%">
+		</div>
+		</div>
 		<br>
 		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		
+
+		<div class="table">
+			<div><img class="table" src="./images/table-1.png"></div>
+		
+			<div id="container-background-vase" onclick="changeImage()">
+				<div><img id="image2" class="vase" src="./images/vase-1.png" alt="" onclick="changeImage()"></div>
+				<!-- <div><img id="image2" class="vase" src="./images/vase-2.png" onclick="changeImage()"></div> -->
+				<!-- <div><img id="image2" class="vase" src="./images/vase-3.png" onclick="changeImage()"></div> -->
+				<!-- <div><img id="image2" class="vase" src="./images/vase-4.png" onclick="changeImage()"></div> -->
+				<!-- <div><img id="image2" class="vase" src="./images/vase-5.png" onclick="changeImage()"></div> -->
+			</div>
+	
+		
 		</div>
 
-    <div class="frame">
-      <div><img class="frame" src="./images/frame.png"></div>
-      <div><img class="mirror-button" src="./images/mirror-button.png"></div>
-    </div>
-    <div class="table">
-      <div><img class="table" src="./images/table-1.png"></div>
-    </div>
-	  <center>
-	  <div class="cam">
-		  <video id="vid"></video>
-	  </div>
-	  <br />
-	  <button id="but" autoplay>
-	  	Look In Mirror
-		  <!-- before u click button is display none n after display block -->
-	  </button>
+		<div class="frame">
+			<div><img class="frame" src="./images/frame.png"></div>
+			<div><img class="mirror-button" src="./images/mirror-button.png"></div>
+		</div>
 
-	  <!-- <input id="but" autoplay type="button" value="Look In Mirror" /> -->
 
-	  </center>
-
-    <!-- <button id="prevBtn">Prev</button>
-    <button id="nextBtn">Next</button> -->
+		<center>
+		<div class="cam">
+			<video id="vid"></video>
+		</div>
+		<br />
+		<!-- <input id="but" autoplay type="button" value="Look In Mirror" /> -->
+		</center>
+		<!-- <button id="prevBtn">Prev</button>
+		<button id="nextBtn">Next</button> -->
   </div>
 	
 
 	<script>
-	let slideIndex = 1;
-	showSlides(slideIndex);
-	
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-	
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	
-	function showSlides(n) {
-	  let i;
-	  let slides = document.getElementsByClassName("mySlides");
-	  let dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-	  }
-	  for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		}
 	</script>
 
   <script src="js/main.js"></script>

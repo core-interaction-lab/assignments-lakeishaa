@@ -12,6 +12,20 @@ body {
 	font-family: 'Taprom', cursive;
 }
 
+.wrapper {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#container-background {
+    height: 100vh;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
 .background {
     /* width: auto;
     height: 100vh; */
@@ -54,7 +68,7 @@ video {
     margin-left: auto;
     display: block; */
     z-index: 15;
-	top: 620px;
+	top: 610px;
 	font-family: 'Taprom', cursive;
 	font-size: 20px;
 	background-color: #fff7e9;
@@ -63,7 +77,18 @@ video {
     transform: translate(-50%, -50%);
     left: 50%;
     position: absolute;
-}
+    cursor: pointer;
+    /* animation: pulsearrow 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;    */
+    }
+    
+    /* @keyframes pulsearrow {
+        0% { transform: scale(1) rotate(0.5deg); }
+        50% { transform: scale(1.2) rotate(-4deg);
+        100% { transform: scale(1) rotate(0.5deg); }
+        }
+      } */
 
 .mirror-button {
 	width: 250px;
@@ -81,7 +106,7 @@ video {
     width: 350px;
     height: auto;
     /* position: fixed; */
-    top: 55px;
+    top: 53px;
     z-index: 4;
     /* margin-left: 37%;
 	left: 10px; */
@@ -93,7 +118,7 @@ video {
 
 .h1 {
     color: black;
-    top: 58px;
+    top: 56px;
 	text-align: center;
     /* position: fixed; */
 	font-size: 25px;
@@ -116,20 +141,32 @@ video {
 	/* opacity: 50%; */
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 291px;
     transform: translate(-50%, -50%);
 }
 
 .table {
-    width: 1100px;
-    height: auto;
-    top: 545px;
+    width: 1150px;
+    height: 943;
+    top: 585px;
     z-index: 4;
 
     display: block;
     transform: translate(-50%, -50%);
     left: 50%;
     position: absolute;
+}
+
+.vase {
+    width: 60px;
+    height: auto;
+    top: 500%;
+    z-index: 16;
+
+    display: block;
+    /* transform: translate(-50%, -50%); */
+    left: 65%;
+    position: sticky;
 }
 
 /* .blue_hair {
@@ -144,16 +181,21 @@ video {
     left: 580px;
 } */
 
-.hair-2 {
-    width: 320px;
+.hair-11 {
+    width: 900px;
     height: auto;
     position: absolute;
-    top: 180px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 0px;
     display: block;
     z-index: 4;
-    left: 580px; 
+    left: 5%;
+}
+
+.hair-2 {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    display: block;
 }
 
 .hair-3 {
@@ -190,19 +232,42 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 * {box-sizing: border-box}
 	body {font-family: Verdana, sans-serif; margin:0}
 	.mySlides {display: none}
 	img {vertical-align: middle;}
 	
 	/* Slideshow container */
-	.slideshow-container {
+	#slideshow-container {
 	  max-width: 1000px;
 	  position: relative;
 	  margin: auto;
       z-index: 8;
+      /* opacity: 0.5; */
+      display: none;
+      animation-name: fade;
+      animation-duration: 1.5s;
+	  /* animation-duration: 5s;
+      animation-delay: 5s; */
+      /* transition-delay: 5s; */
 	}
-	
+
+    /* @keyframes fade-2 {
+        from {opacity: 0} 
+        to {opacity: 1}
+    } */
+
 	/* Next & previous buttons */
 	.prev, .next {
 	  cursor: pointer;
@@ -211,7 +276,7 @@ video {
 	  width: auto;
 	  padding: 16px;
 	  /* margin-top: -22px; */
-      margin: -22px -55px auto -55px;
+      margin: -22px 155px auto 155px;
 	  color: white;
 	  font-weight: bold;
 	  font-size: 30px;
@@ -219,6 +284,10 @@ video {
 	  border-radius: 0 3px 3px 0;
 	  user-select: none;
 	}
+
+    #arrows {
+        display: none;
+    }
 	
     .prev-arrow {
         width: 110px;
