@@ -68,7 +68,7 @@ video {
     margin-left: auto;
     display: block; */
     z-index: 15;
-	top: 610px;
+	top: 605px;
 	font-family: 'Taprom', cursive;
 	font-size: 20px;
 	background-color: #fff7e9;
@@ -98,7 +98,7 @@ video {
     
     position: absolute;
     left: 50%;
-    top: 566px;
+    top: 561px;
     transform: translate(-50%, -50%);
 }
 
@@ -232,7 +232,7 @@ img.hair-2 {
     width: 10px;
     height: auto;
     position: absolute;
-    top: 35px;
+    top: 32px;
     left: 5px;
     display: block;
     z-index: 4;
@@ -280,7 +280,7 @@ img.hair-6 {
     left: 2px;
     display: block;
     z-index: 4;
-    transform: scale(1.69);
+    transform: scale(1.7);
 }
 
 img.hair-7 {
@@ -308,11 +308,11 @@ img.hair-9 {
     width: 10px;
     height: auto;
     position: absolute;
-    top: -70px;
+    top: -65px;
     left: 0px;
     display: block;
     z-index: 4;
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(7deg);
 }
 
 img.hair-10 {
@@ -323,7 +323,7 @@ img.hair-10 {
     left: 5px;
     display: block;
     z-index: 4;
-    transform: scale(1.6);
+    transform: scale(1.7);
 }
 
 img.hair-1 {
