@@ -39,7 +39,7 @@
 
 
 // background
-const imgUrls = ['./images/wallpaper-3.jpg','./images/wallpaper-11.jpg', './images/wallpaper-5.jpg', './images/wallpaper-4.jpg', './images/wallpaper-9.jpg', './images/wallpaper-12.jpg', './images/wallpaper-6.jpg','./images/wallpaper-8.jpg','./images/wallpaper-2.jpg'   ];
+const imgUrls = ['./images/wallpaper-3.jpg','./images/wallpaper-11.jpg', './images/wallpaper-5.jpg', './images/wallpaper-4.jpg', './images/wallpaper-9.jpg', './images/wallpaper-12.jpg', './images/wallpaper-6.jpg','./images/wallpaper-13.jpeg', './images/wallpaper-8.jpg','./images/wallpaper-2.jpg'   ];
 let imgIdx = 0;
 const displayImage = document.getElementById('image1');
 
