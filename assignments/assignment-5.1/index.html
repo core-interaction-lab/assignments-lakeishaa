@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Madlibs
+        </title>
+        <meta name="viewpoert" content="width=device-width, initial-scale-1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <div id="content">
+        <!-- <h3 class="text-primary text-center">🎃A Halloween Mad Libs🎃</h3>
+        <p>Fill in the textboxes below to receieve your spooky story! (If you get bored, use the Auto-Fill button.)</p>
+         -->
+        <header class="header">
+            <h1 class="h1"><br>BABY BY JUSTIN BIEBER</h1>
+            <h2 class="h2">Create Your Own Lyric To Change Justin Bieber's Most Disliked Youtube Song
+                <!-- <div class="timer"> <span id="time">05:00</span> Minutes!</div> -->
+                </h2>
+            <br>
+        </header>
+        
+        <form action="#theStory" method="post" onsubmit="submitInputs();return false">
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input1">1 Colour</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input1" placeholder="A colour" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input2">2 Food</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input2" placeholder="Something you eat" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input3">3 Number</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input3" placeholder="A number" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input4">4 Animal</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input4" placeholder="A type of animal" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input5">5 Adjective</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input5" placeholder="A describing word" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input6">6 Tool</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input6" placeholder="A type of tool" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input7">7 Vegetable</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input7" placeholder="A type of vegetable" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input8">8 Container</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input8" placeholder="Something you put stuff in" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input9">9 Color</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input9" placeholder="A color" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input10">10 Object</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input10" placeholder="An inanimate object" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input11">11 Fruit -s</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input11" placeholder="A type of fruit (plural, end with -s)" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input12">12 Candy -s</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input12" placeholder="Some type of candy (plural, end with -s)" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input13">13 Sea Animal</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input13" placeholder="A type of sea creature" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input14">14 Verb -ing</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input14" placeholder="An action word (end with -ing)" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input15">15 Furniture</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input15" placeholder="Some kind of furniture" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input16">16 Color</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input16" placeholder="A color" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input17">17 Noun -s</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input17" placeholder="A person, place, or thing (plural, end with -s)" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input18">18 Disease</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input18" placeholder="A kind of disease" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <button class="btn btn-primary" type="submit">Submit</button> - <button class="btn btn-success" onclick="autoFill()" type="button">Auto-Fill</button> - <button class="btn btn-danger" onclick="clearForm()" type="button">Clear</button>
+            <!-- <button class="btn btn-primary" type="submit">Submit</button> - <button class="btn btn-danger" onclick="clearForm()" type="button">Clear</button> -->
+            <br>
+        </div>
+        </form>
+      </div>
+      <div id="theStory"></div>
+      <div id="footer">
+        <!-- Based on <a href="https://www.woojr.com/halloween-mad-libs/mad-scientist-madlib-print/">Mad Scientist Mad Lib</a> from <em>Woo! Jr. Kids Activities</em> -->
+      </div>
+      <script src="js/main.js"></script>
+    </body>
+</html>

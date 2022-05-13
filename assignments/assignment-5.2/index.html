@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Madlibs
+        </title>
+        <meta name="viewpoert" content="width=device-width, initial-scale-1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <div id="content">
+        <!-- <h3 class="text-primary text-center">🎃A Halloween Mad Libs🎃</h3>
+        <p>Fill in the textboxes below to receieve your spooky story! (If you get bored, use the Auto-Fill button.)</p>
+         -->
+        <header class="header">
+            <h1 class="h1"><br>Baby by Justin Bieber</h1>
+            <h2 class="h2">Create Your Own Lyric To Change Justin Bieber's Most Hated Song!
+                <!-- <div class="timer"> <span id="time">05:00</span> Minutes!</div> -->
+                </h2>
+            <br>
+        </header>
+        
+        <form action="#theStory" method="post" onsubmit="submitInputs();return false">
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input1">1. Something you do in frustration (verb) </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input1" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input2">2. Something you're willing to give (noun) </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input2" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input3">3. Term of endearment</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input3" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input4">4. Something you want someone to stop doing (verb -ing)</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input4" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input5">5. Type of relationship (-s)</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input5" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input6">6. An insult</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input6" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input7">7. Body part</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input7" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input8">8. First, second, third, fourth, etc.</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input8" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input9">9. Interjection</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input9" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input10">10. Interjection</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input10" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input11">11. Interjection</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input11" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label" for="input12">12. Adverbs of frequency (sometimes, never, often, etc.)</label>
+            <div class="col-sm-7">
+              <input class="form-control" id="input12" placeholder="" required="" type="text">
+            </div>
+          </div>
+          <br>
+          <div class="form-group row">
+             <button class="btn btn-success" onclick="autoFill()" type="button">Original</button> - <button class="btn btn-primary" type="submit">Submit</button> - <button class="btn btn-danger" onclick="clearForm()" type="button">Clear</button>
+            <!-- <button class="btn btn-primary" type="submit">Submit</button> - <button class="btn btn-danger" onclick="clearForm()" type="button">Clear</button> -->
+            <br>
+        </div> 
+          <br>
+        </form>
+      </div> 
+      <br>
+      <div id="theStory"></div>
+      <div id="footer">
+        <!-- Based on <a href="https://www.woojr.com/halloween-mad-libs/mad-scientist-madlib-print/">Mad Scientist Mad Lib</a> from <em>Woo! Jr. Kids Activities</em> -->
+      </div>
+      <script src="js/main.js"></script>
+    </body>
+</html>

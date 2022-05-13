@@ -1,0 +1,61 @@
+html body {
+    background-color: #C6F7FF;
+    font-family: 'Inconsolata', monospace;
+}
+  
+#content, #footer {
+    text-align: center;
+}
+  
+#content p {
+    margin: 0 auto;
+}
+  
+form {
+    margin: 0 auto;
+    width: 40%;
+    /*margin-bottom: 1em;*/
+    background-color: #FFA785;
+    /* #87CBAC; */
+    text-align: center;
+    padding: 1em 0 .1em 0;
+    border: .1em solid gray;
+}
+  
+.form-group {
+    text-align: center;
+}
+  
+.col-form-label {
+    text-align: right;
+    font-size: 1.1em;
+    line-height: 1.9em;
+}
+  
+span {
+    color: #FF4500;
+    font-weight: bold;
+}
+  
+#theStory {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    text-align: left;
+}
+  
+#theStory p {
+    text-indent: 3em;
+    font-size: 1.3em;
+}
+  
+#theStory h1 {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+}
+  
+  /* @media only screen and (max-width: 767px) {
+    form {
+      width: 85%;
+    }
+  } */

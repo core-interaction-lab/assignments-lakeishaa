@@ -1,0 +1,162 @@
+html body {
+    background-color: #2D292B;
+    font-family: 'Inconsolata', monospace;
+    margin-top: -10px;
+}
+
+.h1 {
+    color: #FFA785;
+}
+
+.h2 {
+    color: #FFA785;
+}
+
+#content, #footer {
+    text-align: center;
+}
+  
+#content p {
+    margin: 0 auto;
+}
+  
+form {
+    margin: 0 auto;
+    width: 45%;
+    /*margin-bottom: 1em;*/
+    background-color: #C1D5C4;
+    /* #87CBAC; */
+    text-align: center;
+    padding: 1em 0 .1em 0;
+    border: .1em solid gray;
+}
+  
+.form-group {
+    text-align: center;
+}
+  
+.col-form-label {
+    text-align: right;
+    font-size: 20px;
+    line-height: 50px;
+}
+  
+span {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline solid white;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 23px;
+}
+  
+#theStory {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+  
+#theStory p {
+    font-size: 20px;
+    color: #C1D5C4;
+    color: #FFA785;
+}
+
+#theStory p.congrats {
+    font-size: 40px;
+    margin: 40px auto;
+    color: white;
+
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+  
+#theStory h1 {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    color: #C1D5C4;
+
+}
+  
+  /* @media only screen and (max-width: 767px) {
+    form {
+      width: 85%;
+    }
+  } */
+
+#input1 {
+    width: 160px;
+    text-align: center;
+}
+
+#input2 {
+    width: 160px;
+    text-align: center;
+}
+
+#input3 {
+    width: 160px;
+    text-align: center;
+}
+
+#input4 {
+    width: 160px;
+    text-align: center;
+}
+
+#input5 {
+    width: 160px;
+    text-align: center;
+}
+
+#input6 {
+    width: 160px;
+    text-align: center;
+}
+
+#input7 {
+    width: 160px;
+    text-align: center;
+}
+
+#input8 {
+    width: 160px;
+    text-align: center;
+}
+
+#input9 {
+    width: 160px;
+    text-align: center;
+}
+
+#input10 {
+    width: 160px;
+    text-align: center;
+}
+
+#input11 {
+    width: 160px;
+    text-align: center;
+}
+
+#input12 {
+    width: 160px;
+    text-align: center;
+}
+
+button {
+    background-color: #FFA785;
+}
