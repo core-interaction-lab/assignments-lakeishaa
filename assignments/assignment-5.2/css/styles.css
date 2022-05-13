@@ -44,7 +44,7 @@ form {
 span {
     color: white;
     font-weight: bold;
-    text-decoration: underline solid white;
+    text-decoration: underline solid #FFA785;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 23px;
 }
